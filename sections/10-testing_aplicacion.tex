@@ -1,18 +1,15 @@
 \section{Testing de la Aplicación Desarrollada}
-\subsection{Estrategia de Pruebas}
-% Describir la estrategia general de pruebas: tipos (unitarias, integración, e2e), frameworks y cobertura esperada.
-
-\subsection{Pruebas Unitarias}
-% Indicar frameworks usados (JUnit, Jest, etc.), ejemplos y criterios de aceptación.
-
-\subsection{Pruebas de Integración}
-% Explicar qué flujos se integran y cómo se validan (APIs, DB, servicios externos).
-
+\subsection{Testing General del Proyecto}
+El testing de la aplicación se llevó adelante directamente por quienes trabajaron en el proyecto, ya que no se contó con un equipo de pruebas dedicado. Las verificaciones se fueron realizando a medida que se sumaban nuevas funcionalidades, lo que permitió detectar errores con rapidez y corregirlos antes de avanzar con el resto del desarrollo.
+\subsection{Pruebas Manuales Iniciales}
+Cada funcionalidad fue probada primero de manera manual, revisando su comportamiento desde la interfaz o enviando solicitudes a la API según correspondiera. Una vez que el sistema estuvo completo, se hizo una revisión general de todos los casos de uso para asegurarse de que los flujos funcionaran de forma coherente y sin generar fallos entre distintas partes de la aplicación.
+\subsection{Pruebas en Backend (Spring Boot)}
+En el backend, desarrollado con Spring Boot, se implementaron pruebas unitarias e integraciones utilizando JUnit, Mockito y la herramienta de cobertura JaCoCo. Esto permitió verificar la lógica de negocio, los controladores y varios de los servicios internos. La cobertura superó el 80\%, un valor adecuado para tener un buen nivel de confianza en el comportamiento de las áreas más importantes del código.
+\subsection{Pruebas en Frontend (Next.js + TypeScript)}
+El frontend, construido con Next.js y TypeScript, también incorporó pruebas automatizadas mediante Jest. Estas pruebas abarcaron componentes, funciones auxiliares y ciertos elementos de la lógica de presentación. Al igual que en el backend, el nivel de cobertura superó el 80\%, lo que ayudó a detectar errores de visualización, manejo de datos y algunos detalles que surgieron durante la integración con la API.
+\subsection{Pruebas Manuales en Web y PWA}
+Además de estas pruebas automatizadas, se realizaron pruebas manuales tanto en la versión web como en la PWA. En esta etapa se revisó la navegación completa, el funcionamiento en dispositivos móviles, la instalación de la aplicación y los flujos principales de interacción desde el punto de vista del usuario final.
 \subsection{Pruebas End-to-End (E2E)}
-% Herramientas (Cypress, Playwright), escenarios principales y datos de prueba.
-
-\subsection{Automatización y CI}
-% Flujo de CI (GitHub Actions/GitLab CI), jobs de test, reportes y gates necesarias.
-
-\subsection{Resultados y Cobertura}
-% Cómo se reportan los resultados: cobertura, reportes HTML, dashboards.
+Por último, se realizaron pruebas end-to-end (E2E) para evaluar el funcionamiento del sistema completo, desde la interfaz hasta la base de datos. Este tipo de testing se centró en reproducir escenarios reales de uso, verificando que los distintos componentes interactúan de forma correcta y continua. Las pruebas E2E permitieron validar flujos completos como el inicio de sesión, la carga y consulta de datos, la comunicación con la API y la correcta actualización de la información en la base de datos. Este enfoque fue especialmente útil para detectar errores que no aparecen en pruebas aisladas, como problemas de integración, diferencias en el formato de los datos o comportamientos inesperados al combinar varias funcionalidades en un mismo flujo.
+\subsection{Conclusión}
+Gracias a esta combinación de pruebas unitarias, integradas, automatizadas, manuales y E2E, se logró obtener un sistema estable, con un buen nivel de calidad y sin fallos críticos al finalizar el desarrollo.

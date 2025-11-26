@@ -17,11 +17,34 @@
 \usepackage{fancyhdr}
 \usepackage{titlesec}
 \usepackage{graphicx}
+% Buscar imágenes en la carpeta images/ por conveniencia
+\graphicspath{{images/}}
 \usepackage{enumitem}
 \usepackage{hyperref}
+% Mejorar marcadores PDF para niveles personalizados
+\usepackage{bookmark}
+
+% Añadir soporte para un cuarto nivel de secciones: reutilizamos
+% el nivel existente `paragraph` (nivel 4) para que `hyperref`
+% y los marcadores lo reconozcan correctamente. Definimos
+% `\subsubsubsection` como un alias a `\paragraph` y
+% adaptamos el formato de `\paragraph` para que sea desplegado
+% (no run-in) y numerado cuando `secnumdepth>=4`.
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+  {3.25ex \@plus 1ex \@minus .2ex}%
+  {1.5ex \@plus .2ex}%
+  {\normalfont\normalsize\bfseries}}
+\makeatother
+
+% Alias cómodo para autores que ya usan \subsubsubsection en secciones
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}}
 
 % Configuración de encabezado (running head)
 \pagestyle{fancy}
+\setlength{\headheight}{14.5pt}
 \fancyhf{}
 \fancyhead[L]{\textit{Título corto del trabajo}}
 \fancyhead[R]{\thepage}
@@ -32,7 +55,7 @@
 \titleformat{\subsection}{\normalfont\bfseries}{\thesubsection.}{0.5em}{}
 
 \setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{4}
 
 \title{Documentación del Proyecto Final (APA visual)}
 \author{Nombre del Autor}

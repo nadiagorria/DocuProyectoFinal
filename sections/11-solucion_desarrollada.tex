@@ -1,30 +1,59 @@
 \section{La Solución Desarrollada}
+El Sistema de Gestión de Análisis de Semillas desarrollado para INIA es una plataforma web integral que digitaliza y centraliza todo el proceso de análisis de calidad de semillas, reemplazando el manejo fragmentado que anteriormente se realizaba en múltiples planillas de Excel. La solución permite registrar lotes que ingresan al laboratorio, realizar distintos tipos de análisis especializados y generar reportes estandarizados para INIA e INASE con mayor precisión, trazabilidad y control.
 \subsection{Objetivos de la Solución}
-% Resumen de los objetivos que cumple la solución implementada.
-
+La solución tuvo como objetivos principales:
+\begin{itemize}
+    \item Centralizar la información de todos los análisis en un único sistema accesible desde cualquier dispositivo.
+    \item Estandarizar el registro de los lotes de semillas y de los resultados obtenidos en cada análisis.
+    \item Reducir errores eliminando la manipulación manual de múltiples planillas.
+    \item Aumentar la trazabilidad mediante estados de avance y registro estructurado de datos.
+    \item Mejorar la eficiencia del laboratorio, automatizando validaciones, cálculos y generación de reportes.
+    \item Facilitar el cumplimiento normativo, generando reportes compatibles con los requerimientos de INIA e INASE.
+    \item Asegurar el acceso controlado, mediante roles de usuario y autenticación JWT.
+\end{itemize}
 \subsubsection{Gestión de Lotes de Semillas}
-% Descripción del módulo de gestión de lotes.
-
+\begin{itemize}
+    \item Registro de lotes ingresados al laboratorio con datos como especie, variedad, empresa, kilos y humedad.
+    \item Visualización y edición de la información del lote.
+    \item Asociación automática de lotes a sus respectivos análisis.
+\end{itemize}
 \subsubsection{Análisis de Calidad}
-% Describir procesos y cálculos asociados.
-
-\subsubsection{Pureza Física}
-% Detalles sobre la comprobación de pureza física.
-
-\subsubsection{Germinación}
-% Módulo y procesos de germinación.
-
-\subsubsection{DOSN (Determinación de Otras Semillas en Número)}
-% Explicar este cálculo y su implementación.
-
-\subsubsection{PMS (Peso de Mil Semillas)}
-% Cómo se calcula y registra.
-
-\subsubsection{Tetrazolio}
-% Proceso y registro de resultados.
-
+El sistema permite realizar distintos análisis obligatorios en los laboratorios de semillas:
+\paragraph{Pureza Física}
+\begin{itemize}
+    \item Registro de porcentajes de semilla pura, materia inerte, otros cultivos y malezas.
+    \item Cálculos automáticos de proporciones y verificaciones según normas vigentes.
+\end{itemize}
+\paragraph{Germinación}
+\begin{itemize}
+    \item Gestión de múltiples repeticiones por muestra.
+    \item Registro de conteos en diferentes días.
+    \item Cálculo automático de germinación final.
+\end{itemize}
+\paragraph{DOSN (Determinación de Otras Semillas en Número)}
+\begin{itemize}
+    \item Identificación y registro de semillas de malezas peligrosas.
+    \item Validación automática de especies críticas.
+\end{itemize}
+\paragraph{PMS (Peso de Mil Semillas)}
+\begin{itemize}
+    \item Registro de repeticiones y cálculo del peso promedio.
+    \item Indicadores automáticos de calidad del lote.
+\end{itemize}
+\paragraph{Tetrazolio}
+\begin{itemize}
+    \item Gestión de múltiples repeticiones por muestra
+    \item Determinación de viabilidad mediante registro visual y categorización.
+\end{itemize}
 \subsubsection{Flujo de Trabajo del Laboratorio}
-% Describir el flujo automatizado/manual.
-
+\begin{itemize}
+    \item Manejo de estados para cada análisis: EN\_PROCESO \textrightarrow{} FINALIZADO \textrightarrow{} APROBADO.
+    \item Control de modificaciones según rol del usuario.
+    \item Historial de avances y validaciones.
+\end{itemize}
 \subsubsection{Reportes y Exportaciones}
-% Tipos de reportes y formatos de exportación soportados.
+\begin{itemize}
+    \item Generación automática de reportes en Excel con las 52 columnas requeridas por INIA e INASE.
+    \item Integración con datos del lote, resultados y observaciones.
+    \item Formatos estandarizados y consistentes para auditorías y trazabilidad.
+\end{itemize}

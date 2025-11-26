@@ -1,0 +1,63 @@
+% Documentación del Proyecto Final - Estilo visual APA (numerado)
+\documentclass[12pt]{article}
+% Idioma y codificación
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Tipografía y espaciado (estilo similar a APA)
+\usepackage{mathptmx} % Times-like font (compatible)
+\usepackage{setspace}
+\doublespacing % APA suele usar interlineado doble
+
+% Márgenes APA: 1 pulgada (2.54 cm)
+\usepackage[letterpaper,margin=1in]{geometry}
+
+% Encabezados y formato de secciones
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% Configuración de encabezado (running head)
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textit{Título corto del trabajo}}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% Secciones estilo APA: flush left, bold, no extra vertical space
+\titleformat{\section}{\normalfont\bfseries\large}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection.}{0.5em}{}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+
+\title{Documentación del Proyecto Final (APA visual)}
+\author{Nombre del Autor}
+\date{\today}
+
+\begin{document}
+\maketitle
+\vspace{1cm}
+\tableofcontents
+\clearpage
+
+% Secciones principales (numeradas)
+\input{sections/01-agradecimientos.tex}
+\input{sections/02-resumen.tex}
+\input{sections/03-introduccion.tex}
+\input{sections/04-objetivos.tex}
+\input{sections/05-estado_del_arte.tex}
+\input{sections/06-analisis_problema.tex}
+\input{sections/07-implementacion.tex}
+\input{sections/08-gestion_proyecto.tex}
+\input{sections/09-problemas_encontrados.tex}
+\input{sections/10-testing_aplicacion.tex}
+\input{sections/11-solucion_desarrollada.tex}
+\input{sections/12-conclusiones.tex}
+\input{sections/13-trabajos_futuro.tex}
+\input{sections/14-referencias.tex}
+
+\end{document}

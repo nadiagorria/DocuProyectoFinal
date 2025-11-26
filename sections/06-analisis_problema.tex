@@ -1,0 +1,101 @@
+\section{Análisis del Problema}
+Para poder desarrollar el sistema web del INIA fue necesario entender a fondo cuáles eran los problemas reales en el trabajo diario del laboratorio. Durante mucho tiempo los análisis se registraban en planillas haciendo difícil mantener un control claro y asegurar la uniformidad de la información. Este diagnóstico inicial fue clave para diseñar una solución que realmente mejorase la forma en que los análisis se gestionan y resultase útil para el cliente.
+A partir de este análisis, se estudiaron cuidadosamente los procesos actuales, se conversó con los usuarios y se documentaron sus necesidades. Esto permitió definir cómo debía funcionar el sistema, qué información era importante, quiénes interactúan con él y qué herramientas debían construirse para hacer su trabajo más sencillo y seguro. Con esta información se estableció el alcance del proyecto y se identificaron los puntos críticos a resolver en cuanto a diseño y desarrollo.
+\subsection{Vista del Modelo de Dominio}
+El modelo de dominio reúne todas las entidades del sistema y muestra cómo se relacionan todas entre sí. Tener esta vista clara fue fundamental para ordenar las ideas, entender el flujo de la información y asegurarse de que el sistema reflejase fielmente la forma en que se trabaja en el laboratorio.
+% ACA LA IMAGEN DEL MODELO DE DOMINIO
+\subsection{Definición de Casos de Uso}
+Los casos de uso ayudan a describir qué puede hacer cada usuario y cómo se relacionan las acciones con las funcionalidades disponibles en el sistema. A partir de ellos se identificaron tareas clave como crear y gestionar lotes y análisis, administrar catálogos, generar reportes y cargar datos históricos.
+\subsection{Actores}
+Los actores son los elementos externos al sistema, ya sean usuarios o sistemas, que interactúan con la plataforma para llevar a cabo determinadas tareas. En este proyecto se definieron tres actores centrales:
+\textbf{Administrador:}
+\begin{itemize}
+    \item Administra catálogos, lista de contactos y aprobación de usuarios.
+    \item Gestiona análisis y lotes.
+    \item Importa datos históricos.
+    \item Otorga y revoca permisos.
+    \item Exporta reportes en formato xlsx.
+    \item Supervisa y valida las acciones realizadas por los Analistas.
+    \item Observa reportes.
+    \item Tiene acceso total a todos los módulos del sistema.
+\end{itemize}
+\textbf{Analista:}
+\begin{itemize}
+    \item Registra y edita lotes y análisis.
+    \item Carga y modifica información técnica.
+    \item Requiere la aprobación del Administrador para confirmar los resultados de un análisis.
+    \item Exporta reportes en formato xlsx.
+    \item Observa reportes.
+\end{itemize}
+\textbf{Observador:}
+\begin{itemize}
+    \item Solo puede visualizar información.
+    \item Accede a lotes, análisis, resultados y reportes.
+    \item No posee permisos para modificar datos.
+\end{itemize}
+\subsection{Diagrama de Casos de Uso}
+El siguiente diagrama muestra los principales casos de uso del sistema:
+% ACA LA IMAGEN DEL DIAGRAMA DE CASOS DE USO
+\subsection{Vista del Modelo de Diseño}
+El diseño propuesto para la arquitectura del sistema busca mantener un equilibrio claro entre simplicidad, organización y capacidad de crecimiento. La estructura en capas responde a la necesidad de separar responsabilidades y asegurar que cada parte del sistema pueda evolucionar sin generar impacto innecesario en las demás. Este enfoque no solo mejora la mantenibilidad, sino que también facilita la incorporación de nuevas funcionalidades en el futuro. 
+La organización del sistema se basa en una arquitectura por capas que incluye la capa de Cliente, donde se ubica la aplicación web, incluyendo sus capacidades de PWA, y la capa de Presentación, encargada de gestionar la interfaz y la comunicación inicial con el backend. A esto se suma la capa de Seguridad, que centraliza los mecanismos de autenticación, autorización y protección de datos. Por su parte, la capa de Aplicación, implementada con Spring Boot, contiene toda la lógica del negocio y se encarga del flujo de información hacia la capa de Datos, responsable del acceso y persistencia.
+En esta arquitectura, los servicios adicionales que utiliza el sistema, como el envío de correos o la verificación en dos pasos, se integran directamente dentro de la capa de Aplicación. Esto evita complejidades innecesarias en la representación del diseño y mantiene el diagrama coherente y simple, sin dejar de reflejar el funcionamiento real del sistema.
+% ACA LA IMAGEN DEL DIAGRAMA DE ARQUITECTURA
+\subsection{Descripción de la Arquitectura del Sistema}
+La arquitectura propuesta organiza el sistema en capas bien definidas, lo que permite mantener una estructura ordenada, escalable y fácil de mantener. Cada capa cumple un rol específico dentro del flujo general de la aplicación.
+\subsubsection{Capa de Cliente (SPA/PWA)}
+El frontend funciona como una aplicación web moderna basada en Next.js y diseñada como SPA con capacidades PWA. Desde el navegador, los usuarios interactúan mediante una interfaz rápida, responsiva y adaptable a distintos dispositivos. La aplicación soporta instalación como app y toda la comunicación con el backend se realiza a través de REST.
+\subsubsection{Capa de Seguridad}
+Incluye los mecanismos que protegen el acceso al sistema. Se utiliza autenticación basada en JWT almacenado en cookies seguras y un sistema de doble factor (2FA) mediante códigos TOTP compatibles con Google Authenticator. La autorización se gestiona con Spring Security mediante roles como ADMIN, ANALISTA y OBSERVADOR. El frontend también aporta seguridad con middleware que controla el acceso a rutas protegidas. Además, existe un sistema de notificaciones por correo para avisos de seguridad y recuperación de cuentas.
+\subsubsection{Capa de Presentación (Frontend)}
+Esta capa engloba la lógica de presentación, los componentes visuales, la validación de formularios y el manejo de estado. Se utilizan herramientas como React Query, React Hook Form, Zod, Radix UI, shadcn/ui y Tailwind. El frontend organiza sus rutas y funcionalidades en módulos bien definidos: autenticación, administración, análisis, reportes, perfil, notificaciones, etc. También ofrece integración con WebSockets para recibir actualizaciones y notificaciones automáticamente e incluye funcionalidades como dashboards interactivos, listados, formularios complejos e instalación como PWA.
+\subsubsection{Capa de Aplicación (Backend)}
+El backend está construido con Spring Boot siguiendo el patrón MVC y estructurado en Controllers, Services y Repositories. Los Controllers exponen las APIs, los Services contienen la lógica de negocio y los Repositories gestionan el acceso a la base de datos. Aquí se manejan análisis de semillas, validaciones, reportes, importación de datos históricos, seguridad, notificaciones y todo el flujo del sistema. También se implementa un canal WebSocket con STOMP para notificaciones en tiempo real, manejo de transacciones y un sistema global de manejo de excepciones.
+\subsubsection{Capa de Datos}
+La persistencia está implementada con Spring Data JPA e Hibernate, usando PostgreSQL como base de datos. La base está diseñada con relaciones bien definidas e integridad referencial.
+\subsection{Descomposición en subsistemas}
+El sistema se organiza en cinco subsistemas principales que trabajan en conjunto para ofrecer una plataforma robusta, segura y orientada a la experiencia del usuario. Cada uno cumple un rol específico dentro de la solución, y en conjunto conforman una arquitectura coherente y fácil de mantener. A continuación, se detalla cada subsistema y los elementos que lo componen.
+\subsubsection{Subsistema de Cliente}
+Representa lo que usa el usuario en su navegador o como PWA instalada.
+\begin{itemize}
+    \item Renderiza la interfaz y maneja la experiencia visual e interacción.
+    \item Funciona incluso con conexión inestable
+    \item Administra cookies de sesión y comunicación con el backend vía HTTPS y WebSockets.
+    \item Se encarga de notificaciones push y la instalación como app en dispositivos.
+\end{itemize}
+\subsubsection{Subsistema de Seguridad}
+\begin{itemize}
+    \item Gestiona la autenticación con JWT y Cookies HttpOnly.
+    \item Implementa 2FA con TOTP y manejo de dispositivos confiables.
+    \item Controla los permisos según roles: ADMIN, ANALISTA, OBSERVADOR.
+    \item Administra contraseñas, recuperación de acceso y validaciones.
+    \item Incluye middleware que protege rutas y verifica sesiones en el frontend.
+    \item Genera alertas por eventos críticos de seguridad (cambios de clave).
+\end{itemize}
+\subsubsection{Subsistema de Presentación (Frontend)}
+\begin{itemize}
+    \item SPA/PWA construida con componentes reutilizables.
+    \item Renderiza pantallas, formularios, tablas, flujos y navegación interna.
+    \item Maneja el estado global de la aplicación.
+    \item Canaliza toda la comunicación hacia el backend mediante servicios API.
+    \item Recibe actualizaciones en tiempo real mediante WebSockets.
+    \item Aplica reglas de visibilidad según rol del usuario.
+\end{itemize}
+\subsubsection{Subsistema de Aplicación (Backend)}
+\begin{itemize}
+    \item Contiene la lógica de negocio principal del sistema.
+    \item Expone endpoints REST desde los controllers.
+    \item Ejecuta reglas de negocio, validaciones e integraciones internas.
+    \item Administra transacciones y operaciones complejas de múltiples pasos.
+    \item Gestiona módulos como catálogos, reportes, usuarios, análisis, lotes, etc.
+    \item Envía notificaciones en tiempo real al frontend.
+    \item Devuelve respuestas seguras, consistentes y auditables.
+\end{itemize}
+\subsubsection{Subsistema de Datos}
+\begin{itemize}
+    \item Gestiona el acceso a la base de datos PostgreSQL.
+    \item Define las entidades del dominio y su estructura.
+    \item Implementa repositorios JPA para consultas y persistencia.
+    \item Garantiza integridad, consistencia y trazabilidad de la información.
+    \item Registra auditoría automática de creación y modificación de registros.
+\end{itemize}

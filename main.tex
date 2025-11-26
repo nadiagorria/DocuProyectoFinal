@@ -23,6 +23,8 @@
 \usepackage{hyperref}
 % Mejorar marcadores PDF para niveles personalizados
 \usepackage{bookmark}
+% Evitar que las figuras floten más allá de la sección: \FloatBarrier
+\usepackage{placeins}
 
 % Añadir soporte para un cuarto nivel de secciones: reutilizamos
 % el nivel existente `paragraph` (nivel 4) para que `hyperref`
@@ -73,8 +75,10 @@
 \input{sections/03-introduccion.tex}
 \input{sections/04-objetivos.tex}
 \input{sections/05-estado_del_arte.tex}
+\FloatBarrier
 \input{sections/06-analisis_problema.tex}
 \input{sections/07-implementacion.tex}
+\FloatBarrier
 \input{sections/08-gestion_proyecto.tex}
 \input{sections/09-problemas_encontrados.tex}
 \input{sections/10-testing_aplicacion.tex}

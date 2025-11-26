@@ -3,11 +3,17 @@ Para poder desarrollar el sistema web del INIA fue necesario entender a fondo cu
 A partir de este análisis, se estudiaron cuidadosamente los procesos actuales, se conversó con los usuarios y se documentaron sus necesidades. Esto permitió definir cómo debía funcionar el sistema, qué información era importante, quiénes interactúan con él y qué herramientas debían construirse para hacer su trabajo más sencillo y seguro. Con esta información se estableció el alcance del proyecto y se identificaron los puntos críticos a resolver en cuanto a diseño y desarrollo.
 \subsection{Vista del Modelo de Dominio}
 El modelo de dominio reúne todas las entidades del sistema y muestra cómo se relacionan todas entre sí. Tener esta vista clara fue fundamental para ordenar las ideas, entender el flujo de la información y asegurarse de que el sistema reflejase fielmente la forma en que se trabaja en el laboratorio.
-% ACA LA IMAGEN DEL MODELO DE DOMINIO
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{\detokenize{Diagrama de Dominio.png}}
+    \caption{Modelo de dominio: entidades y relaciones principales.}
+    \label{fig:modelo_dominio}
+\end{figure}
 \subsection{Definición de Casos de Uso}
 Los casos de uso ayudan a describir qué puede hacer cada usuario y cómo se relacionan las acciones con las funcionalidades disponibles en el sistema. A partir de ellos se identificaron tareas clave como crear y gestionar lotes y análisis, administrar catálogos, generar reportes y cargar datos históricos.
 \subsection{Actores}
 Los actores son los elementos externos al sistema, ya sean usuarios o sistemas, que interactúan con la plataforma para llevar a cabo determinadas tareas. En este proyecto se definieron tres actores centrales:
+
 \textbf{Administrador:}
 \begin{itemize}
     \item Administra catálogos, lista de contactos y aprobación de usuarios.
@@ -35,12 +41,22 @@ Los actores son los elementos externos al sistema, ya sean usuarios o sistemas, 
 \end{itemize}
 \subsection{Diagrama de Casos de Uso}
 El siguiente diagrama muestra los principales casos de uso del sistema:
-% ACA LA IMAGEN DEL DIAGRAMA DE CASOS DE USO
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{\detokenize{Diagrama Casos de Uso.png}}
+    \caption{Diagrama de casos de uso: principales interacciones entre actores y el sistema.}
+    \label{fig:casos_uso}
+\end{figure}
 \subsection{Vista del Modelo de Diseño}
 El diseño propuesto para la arquitectura del sistema busca mantener un equilibrio claro entre simplicidad, organización y capacidad de crecimiento. La estructura en capas responde a la necesidad de separar responsabilidades y asegurar que cada parte del sistema pueda evolucionar sin generar impacto innecesario en las demás. Este enfoque no solo mejora la mantenibilidad, sino que también facilita la incorporación de nuevas funcionalidades en el futuro. 
 La organización del sistema se basa en una arquitectura por capas que incluye la capa de Cliente, donde se ubica la aplicación web, incluyendo sus capacidades de PWA, y la capa de Presentación, encargada de gestionar la interfaz y la comunicación inicial con el backend. A esto se suma la capa de Seguridad, que centraliza los mecanismos de autenticación, autorización y protección de datos. Por su parte, la capa de Aplicación, implementada con Spring Boot, contiene toda la lógica del negocio y se encarga del flujo de información hacia la capa de Datos, responsable del acceso y persistencia.
 En esta arquitectura, los servicios adicionales que utiliza el sistema, como el envío de correos o la verificación en dos pasos, se integran directamente dentro de la capa de Aplicación. Esto evita complejidades innecesarias en la representación del diseño y mantiene el diagrama coherente y simple, sin dejar de reflejar el funcionamiento real del sistema.
-% ACA LA IMAGEN DEL DIAGRAMA DE ARQUITECTURA
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{\detokenize{Diagrama de Arquitectura.png}}
+    \caption{Diagrama de arquitectura: capas y componentes principales del sistema.}
+    \label{fig:arquitectura}
+\end{figure}
 \subsection{Descripción de la Arquitectura del Sistema}
 La arquitectura propuesta organiza el sistema en capas bien definidas, lo que permite mantener una estructura ordenada, escalable y fácil de mantener. Cada capa cumple un rol específico dentro del flujo general de la aplicación.
 \subsubsection{Capa de Cliente (SPA/PWA)}

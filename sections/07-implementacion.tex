@@ -3,6 +3,12 @@
 El diagrama de Deployment permitió mostrar de manera clara cómo quedó distribuida la arquitectura física del sistema una vez implementado. Allí se identificaron los distintos nodos de hardware y software que intervinieron en la solución, así como la forma en que se organizaron los componentes dentro de la infraestructura disponible. El sistema se desplegó en un servidor virtual de Amazon Web Services (AWS), utilizando una instancia EC2 configurada para ejecutar contenedores Docker. En este entorno se alojaron los servicios del frontend, el backend y la base de datos, los cuales se comunicaron a través de una red interna propia del host.
 El diagrama también reflejó la forma en que los usuarios accedieron a la aplicación, ya fuera desde un navegador web o desde la versión móvil como PWA. En ambos casos, la conexión se estableció a través de Internet hacia la dirección pública del servidor EC2. Gracias a esta representación fue posible visualizar de manera sintética cómo se relacionaron los distintos elementos de la solución y cómo se organizó el entorno de despliegue, lo que sirvió como punto de partida para el análisis detallado de las tecnologías utilizadas en el backend y el frontend.
 %ACA VA EL DIAGRAMA DE DEPLOYMENT
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{\detokenize{Deploy UML.png}}
+	\caption{Diagrama de deployment (UML) que muestra la distribución de nodos y contenedores en la infraestructura de despliegue.}
+	\label{fig:deploy}
+\end{figure}
 \subsection{Tecnologías a utilizar}
 Las tecnologías empleadas en el proyecto se seleccionaron en función de los requerimientos funcionales, el rendimiento esperado y la necesidad de contar con una arquitectura flexible y mantenible. Se optó por una combinación de herramientas modernas y ampliamente utilizadas en la industria, lo que permitió asegurar un entorno estable durante el desarrollo y el despliegue. La infraestructura se apoyó en contenedores Docker ejecutados sobre una instancia EC2 de AWS, lo que facilitó la portabilidad, el aislamiento y la gestión individual de cada servicio del sistema.
 Además, se adoptaron tecnologías que ofrecieron buen soporte para el trabajo con APIs, gestión de datos, desarrollo de interfaces web y compatibilidad con PWA. Esta selección permitió construir una solución sólida y coherente, manteniendo una estructura clara entre la capa de presentación, la capa de negocio y la capa de persistencia.

@@ -1,13 +1,58 @@
 \begin{thebibliography}{1}
 
-\bibitem{knuth1984}
-Donald~E. Knuth.
-\newblock {\em The \TeX{}book}.
-\newblock Addison-Wesley, Reading, Massachusetts, 1984.
+\bibitem{jacoco}
+{EclEmma / JaCoCo}.
+\newblock Biblioteca jacoco para cobertura de c\'odigo java.
+\newblock \url{https://www.jacoco.org/jacoco/}, 2023.
+\newblock Recuperado: 26 noviembre 2025.
 
-\bibitem{lamport1994}
-Leslie Lamport.
-\newblock Latex: A document preparation system.
-\newblock {\em Software—Practice \& Experience}, 24(10):927--937, 1994.
+\bibitem{fao-seed}
+{Food and Agriculture Organization (FAO)}.
+\newblock Gu\'ias para el control de calidad de semillas.
+\newblock \url{http://www.fao.org}, 2014.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{rfc6455}
+{IETF}.
+\newblock Protocolo websocket -- rfc 6455.
+\newblock \url{https://datatracker.ietf.org/doc/html/rfc6455}, 2011.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{rfc7519}
+{IETF}.
+\newblock Token web json (jwt) -- rfc 7519.
+\newblock \url{https://datatracker.ietf.org/doc/html/rfc7519}, 2015.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{inia-uy}
+{Instituto Nacional de Investigaci\'on Agropecuaria (INIA)}.
+\newblock Inia -- sitio oficial.
+\newblock \url{https://www.inia.uy}, 2025.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{ista2023}
+{International Seed Testing Association (ISTA)}.
+\newblock {\em Reglas internacionales para el an\'alisis de semillas}, 2023.
+\newblock Disponible en \url{https://www.seedtest.org}. Recuperado: 26
+  noviembre 2025.
+
+\bibitem{junit5}
+{JUnit Team}.
+\newblock Gu\'ia de usuario de junit 5.
+\newblock \url{https://junit.org/junit5/docs/current/user-guide/}, 2023.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{spring-boot}
+{Spring Team}.
+\newblock Documentaci\'on de referencia de spring boot.
+\newblock
+  \url{https://docs.spring.io/spring-boot/docs/current/reference/html/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{nextjs}
+{Vercel / Next.js Team}.
+\newblock Documentaci\'on de next.js.
+\newblock \url{https://nextjs.org/docs/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
 
 \end{thebibliography}

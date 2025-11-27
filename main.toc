@@ -3,26 +3,26 @@
 \contentsline {section}{\numberline {2}Resumen}{5}{section.2}%
 \contentsline {section}{\numberline {3}Introducción}{6}{section.3}%
 \contentsline {section}{\numberline {4}Objetivos Planteados y Resultados Esperados}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Objetivos específicos}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Objetivos específicos}{8}{subsection.4.1}%
 \contentsline {section}{\numberline {5}Estado del Arte}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Marco Teórico}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Marco Teórico}{9}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}La Transición Hacia Sistemas Web}{9}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Tecnologías}{10}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Frontend: React + TypeScript}{10}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Backend: Java + Spring Boot}{10}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2}Backend: Java + Spring Boot}{11}{subsubsection.5.3.2}%
 \contentsline {subsubsection}{\numberline {5.3.3}Base de Datos: PostgreSQL}{11}{subsubsection.5.3.3}%
 \contentsline {subsubsection}{\numberline {5.3.4}Infraestructura y Arquitectura}{11}{subsubsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.4}Soluciones Similares}{11}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.4}Soluciones Similares}{12}{subsection.5.4}%
 \contentsline {subsubsection}{\numberline {5.4.1}Airtable}{12}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Smartsheet}{13}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.3}Odoo}{14}{subsubsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.5}Conclusión del análisis comparativo}{15}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.4.2}Smartsheet}{12}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Odoo}{13}{subsubsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.5}Conclusión del análisis comparativo}{14}{subsection.5.5}%
 \contentsline {section}{\numberline {6}Análisis del Problema}{15}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Vista del Modelo de Dominio}{16}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Definición de Casos de Uso}{16}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Actores}{17}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Diagrama de Casos de Uso}{18}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Vista del Modelo de Diseño}{18}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.5}Vista del Modelo de Diseño}{19}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Descripción de la Arquitectura del Sistema}{19}{subsection.6.6}%
 \contentsline {subsubsection}{\numberline {6.6.1}Capa de Cliente (SPA/PWA)}{19}{subsubsection.6.6.1}%
 \contentsline {subsubsection}{\numberline {6.6.2}Capa de Seguridad}{21}{subsubsection.6.6.2}%

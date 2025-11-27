@@ -5,8 +5,10 @@ El testing de la aplicación se llevó adelante directamente por quienes trabaja
 Cada funcionalidad fue probada primero de manera manual, revisando su comportamiento desde la interfaz o enviando solicitudes a la API según correspondiera. Una vez que el sistema estuvo completo, se hizo una revisión general de todos los casos de uso para asegurarse de que los flujos funcionaran de forma coherente y sin generar fallos entre distintas partes de la aplicación.
 \subsection{Pruebas en Backend (Spring Boot)}
 En el backend, desarrollado con Spring Boot, se implementaron pruebas unitarias e integraciones utilizando JUnit, Mockito y la herramienta de cobertura JaCoCo. Esto permitió verificar la lógica de negocio, los controladores y varios de los servicios internos. La cobertura superó el 80\%, un valor adecuado para tener un buen nivel de confianza en el comportamiento de las áreas más importantes del código.
+\cite{spring-boot,junit5,mockito,jacoco}
 \subsection{Pruebas en Frontend (Next.js + TypeScript)}
 El frontend, construido con Next.js y TypeScript, también incorporó pruebas automatizadas mediante Jest. Estas pruebas abarcaron componentes, funciones auxiliares y ciertos elementos de la lógica de presentación. Al igual que en el backend, el nivel de cobertura superó el 80\%, lo que ayudó a detectar errores de visualización, manejo de datos y algunos detalles que surgieron durante la integración con la API.
+\cite{nextjs,jest}
 \subsection{Pruebas Manuales en Web y PWA}
 Además de estas pruebas automatizadas, se realizaron pruebas manuales tanto en la versión web como en la PWA. En esta etapa se revisó la navegación completa, el funcionamiento en dispositivos móviles, la instalación de la aplicación y los flujos principales de interacción desde el punto de vista del usuario final.
 \subsection{Pruebas End-to-End (E2E)}

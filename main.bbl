@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{docker}
+{Docker, Inc.}
+\newblock Docker -- contenedores para desarrollo y despliegue.
+\newblock \url{https://www.docker.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
 
 \bibitem{jacoco}
 {EclEmma / JaCoCo}.
@@ -10,6 +16,12 @@
 {Food and Agriculture Organization (FAO)}.
 \newblock Gu\'ias para el control de calidad de semillas.
 \newblock \url{http://www.fao.org}, 2014.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{googlemeet}
+{Google LLC}.
+\newblock Google meet -- videoconferencias y reuniones en línea.
+\newblock \url{https://meet.google.com/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
 \bibitem{rfc6455}
@@ -40,6 +52,30 @@
 {JUnit Team}.
 \newblock Gu\'ia de usuario de junit 5.
 \newblock \url{https://junit.org/junit5/docs/current/user-guide/}, 2023.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{whatsapp}
+{Meta Platforms}.
+\newblock Whatsapp -- mensajer\'ia de equipo y comunicaciones.
+\newblock \url{https://www.whatsapp.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{notion}
+{Notion Labs}.
+\newblock Notion -- gestión de proyectos y documentación colaborativa.
+\newblock \url{https://www.notion.so/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{openapi}
+{OpenAPI Initiative}.
+\newblock Especificaci\'on openapi / swagger -- documentaci\'on de apis.
+\newblock \url{https://www.openapis.org/}, 2023.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{postgresql}
+{PostgreSQL Global Development Group}.
+\newblock Postgresql -- sistema de gestión de bases de datos relacional.
+\newblock \url{https://www.postgresql.org/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
 \bibitem{spring-boot}

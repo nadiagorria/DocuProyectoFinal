@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.26)  26 NOV 2025 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.26)  26 NOV 2025 22:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -494,7 +494,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ...del Modelo de Diseño}{18}{subsection.6.5}
+l.25 ...del Modelo de Diseño}{19}{subsection.6.5}
                                                   % [1
 
 ] [2] [3])
@@ -507,53 +507,56 @@ l.25 ...del Modelo de Diseño}{18}{subsection.6.5}
 ])
 (sections/03-introduccion.tex [6]) (sections/04-objetivos.tex [7])
 (sections/05-estado_del_arte.tex [8] [9] [10] [11]
-<images/Airtable.png, id=242, 1606.0pt x 801.99625pt>
+<images/Airtable.png, id=262, 1606.0pt x 801.99625pt>
 File: images/Airtable.png Graphic file (type png)
 <use images/Airtable.png>
-Package pdftex.def Info: images/Airtable.png  used on input line 80.
+Package pdftex.def Info: images/Airtable.png  used on input line 86.
 (pdftex.def)             Requested size: 375.7927pt x 187.66147pt.
- [12 <./images/Airtable.png (PNG copy)>]
-<images/Smartsheet.png, id=249, 1606.0pt x 901.3675pt>
+ [12]
+<images/Smartsheet.png, id=268, 1606.0pt x 901.3675pt>
 File: images/Smartsheet.png Graphic file (type png)
 <use images/Smartsheet.png>
-Package pdftex.def Info: images/Smartsheet.png  used on input line 101.
+Package pdftex.def Info: images/Smartsheet.png  used on input line 107.
 (pdftex.def)             Requested size: 375.7927pt x 210.91364pt.
- [13 <./images/Smartsheet.png (PNG copy)>]
-<images/Odoo.png, id=255, 1606.0pt x 884.30376pt>
+ [13 <./images/Airtable.png (PNG copy)>]
+<images/Odoo.png, id=274, 1606.0pt x 884.30376pt>
 File: images/Odoo.png Graphic file (type png)
 <use images/Odoo.png>
-Package pdftex.def Info: images/Odoo.png  used on input line 122.
+Package pdftex.def Info: images/Odoo.png  used on input line 128.
 (pdftex.def)             Requested size: 375.7927pt x 206.92085pt.
- [14 <./images/Odoo.png (PNG copy)>]) (sections/06-analisis_problema.tex
-<images/Diagrama de Dominio.png, id=261, 2006.49625pt x 1506.62875pt>
+ [14 <./images/Smartsheet.png (PNG copy)>])
+(sections/06-analisis_problema.tex [15 <./images/Odoo.png (PNG copy)>]
+<images/Diagrama de Dominio.png, id=291, 2006.49625pt x 1506.62875pt>
 File: images/Diagrama de Dominio.png Graphic file (type png)
 <use images/Diagrama de Dominio.png>
-Package pdftex.def Info: images/Diagrama de Dominio.png  used on input line 9.
+Package pdftex.def Info: images/Diagrama de Dominio.png  used on input line 11.
+
 (pdftex.def)             Requested size: 375.7885pt x 282.17035pt.
- [15] [16 <./images/Diagrama de Dominio.png>] [17]
-<images/Diagrama Casos de Uso.png, id=277, 914.41624pt x 2006.49625pt>
+ [16 <./images/Diagrama de Dominio.png>] [17]
+<images/Diagrama Casos de Uso.png, id=303, 914.41624pt x 2006.49625pt>
 File: images/Diagrama Casos de Uso.png Graphic file (type png)
 <use images/Diagrama Casos de Uso.png>
 Package pdftex.def Info: images/Diagrama Casos de Uso.png  used on input line 4
-7.
+9.
 (pdftex.def)             Requested size: 177.84303pt x 390.23955pt.
  [18 <./images/Diagrama Casos de Uso.png>]
-<images/Diagrama de Arquitectura.png, id=285, 452.69125pt x 2006.49625pt>
+<images/Diagrama de Arquitectura.png, id=311, 452.69125pt x 2006.49625pt>
 File: images/Diagrama de Arquitectura.png Graphic file (type png)
 <use images/Diagrama de Arquitectura.png>
 Package pdftex.def Info: images/Diagrama de Arquitectura.png  used on input lin
-e 59.
+e 61.
 (pdftex.def)             Requested size: 88.04303pt x 390.23955pt.
- [19] [20 <./images/Diagrama de Arquitectura.png>] [21] [22] [23]) (sections/07
--implementacion.tex
-<images/Deploy UML.png, id=308, 268.00125pt x 542.77782pt>
+
+[19] [20 <./images/Diagrama de Arquitectura.png>] [21] [22] [23])
+(sections/07-implementacion.tex
+<images/Deploy UML.png, id=338, 268.00125pt x 542.77782pt>
 File: images/Deploy UML.png Graphic file (type png)
 <use images/Deploy UML.png>
-Package pdftex.def Info: images/Deploy UML.png  used on input line 8.
+Package pdftex.def Info: images/Deploy UML.png  used on input line 9.
 (pdftex.def)             Requested size: 192.70311pt x 390.27795pt.
-
-[24] [25 <./images/Deploy UML.png>] [26]) (sections/08-gestion_proyecto.tex
-[27] [28] [29] [30]) (sections/09-problemas_encontrados.tex [31])
+ [24] [25 <./images/Deploy UML.png>] [26])
+(sections/08-gestion_proyecto.tex [27] [28] [29] [30])
+(sections/09-problemas_encontrados.tex [31])
 (sections/10-testing_aplicacion.tex [32])
 (sections/11-solucion_desarrollada.tex [33] [34] [35]
 LaTeX Info: Symbol \textrightarrow not provided by
@@ -580,10 +583,10 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
 
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)))
+)
 [39
 
-] (main.aux
+])) [40] (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -593,22 +596,22 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 12402 strings out of 474486
- 200301 string characters out of 5742810
+ 12415 strings out of 474486
+ 200444 string characters out of 5742810
  1936542 words of memory out of 5000000
- 34337 multiletter control sequences out of 15000+600000
+ 34343 multiletter control sequences out of 15000+600000
  586256 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,968b,776s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1006b,776s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
 tt1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\tcrm1200.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/times/utmb8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1
 /urw/times/utmr8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on main.pdf (40 pages, 3150407 bytes).
+Output written on main.pdf (41 pages, 3164706 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
+ 810 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
  708 words of extra memory for PDF output out of 10000 (max. 10000000)
 

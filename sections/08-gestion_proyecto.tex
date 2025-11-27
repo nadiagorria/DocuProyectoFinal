@@ -30,10 +30,12 @@ El cliente del sistema fue diseñado como una aplicación web dinámica utilizan
 La estructura se organizó siguiendo las convenciones del App Router de Next.js, lo cual permitió una clara separación entre páginas, componentes y módulos de lógica, promoviendo escalabilidad y mantenibilidad.
 
 Para el desarrollo de la interfaz de usuario se utilizaron Tailwind CSS, Radix UI y Shadcn. Estas tecnologías permitieron crear una experiencia visual coherente y accesible, con componentes reutilizables y mantenibles, alineados con estándares modernos de diseño.
+\cite{tailwindcss,radixui,shadcn}
 
 La comunicación entre el frontend y el backend se realizó mediante APIs REST para la mayor parte de las operaciones, mientras que las funcionalidades en tiempo real se implementaron a través de WebSocket, permitiendo la recepción de notificaciones instantáneas y mejorando la experiencia interactiva del usuario.
 
 El aseguramiento de calidad del frontend incluyó la ejecución de pruebas automatizadas mediante Jest y React Testing Library, herramientas ampliamente utilizadas para validar el comportamiento de componentes y flujos de interacción.
+\cite{jest,rtl}
 \subsubsection{Servidor}
 El backend se implementó utilizando Java 21 con Spring Boot 3.5, aplicando una arquitectura en capas que divide la lógica de negocio, los servicios, los controladores web, los repositorios de datos y las configuraciones transversales. Esta estructura facilita el mantenimiento, reduce el acoplamiento y mejora la estabilidad del sistema.
 \cite{spring-boot}
@@ -54,7 +56,9 @@ La seguridad del sistema se abordó mediante:
     \item JWT para la gestión de sesiones sin estado.
     \item Autenticación en dos pasos (2FA) mediante códigos TOTP, fortaleciendo la seguridad del acceso.
 \end{itemize}
-Este conjunto de herramientas permitió cumplir buenas prácticas de seguridad alineadas con estándares modernos.
+\cite{spring-security,rfc7519,rfc6238}
+
+    Este conjunto de herramientas permitió cumplir buenas prácticas de seguridad alineadas con estándares modernos.
 \subsubsection{Herramientas de Construcción, Testing y DevOps}
 El backend fue compilado y gestionado mediante Maven, lo que permitió automatizar tareas de instalación, test y empaquetado.
 

@@ -52,14 +52,14 @@
 \contentsline {subsubsection}{\numberline {8.2.3}Servicios y API}{30}{subsubsection.8.2.3}%
 \contentsline {subsubsection}{\numberline {8.2.4}Persistencia y Base de Datos}{30}{subsubsection.8.2.4}%
 \contentsline {subsubsection}{\numberline {8.2.5}Seguridad}{30}{subsubsection.8.2.5}%
-\contentsline {subsubsection}{\numberline {8.2.6}Herramientas de Construcción, Testing y DevOps}{30}{subsubsection.8.2.6}%
+\contentsline {subsubsection}{\numberline {8.2.6}Herramientas de Construcción, Testing y DevOps}{31}{subsubsection.8.2.6}%
 \contentsline {section}{\numberline {9}Problemas Encontrados}{31}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Reestructuración del Módulo de Germinación}{31}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Cambio de Requisitos}{31}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Cambio de Requisitos}{32}{subsection.9.2}%
 \contentsline {section}{\numberline {10}Testing de la Aplicación Desarrollada}{32}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Testing General del Proyecto}{32}{subsection.10.1}%
 \contentsline {subsection}{\numberline {10.2}Pruebas Manuales Iniciales}{32}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Pruebas en Backend (Spring Boot)}{32}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.3}Pruebas en Backend (Spring Boot)}{33}{subsection.10.3}%
 \contentsline {subsection}{\numberline {10.4}Pruebas en Frontend (Next.js + TypeScript)}{33}{subsection.10.4}%
 \contentsline {subsection}{\numberline {10.5}Pruebas Manuales en Web y PWA}{33}{subsection.10.5}%
 \contentsline {subsection}{\numberline {10.6}Pruebas End-to-End (E2E)}{33}{subsection.10.6}%

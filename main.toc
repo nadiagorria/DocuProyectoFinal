@@ -1,85 +1,85 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Agradecimientos}{5}{section.1}%
-\contentsline {section}{\numberline {2}Resumen}{5}{section.2}%
-\contentsline {section}{\numberline {3}Introducción}{6}{section.3}%
-\contentsline {section}{\numberline {4}Objetivos Planteados y Resultados Esperados}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Objetivos específicos}{8}{subsection.4.1}%
-\contentsline {section}{\numberline {5}Estado del Arte}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Marco Teórico}{9}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}La Transición Hacia Sistemas Web}{9}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Tecnologías}{10}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Frontend: React + TypeScript}{10}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Backend: Java + Spring Boot}{11}{subsubsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Base de Datos: PostgreSQL}{11}{subsubsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.4}Infraestructura y Arquitectura}{11}{subsubsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.4}Soluciones Similares}{12}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Airtable}{12}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Smartsheet}{12}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.3}Odoo}{13}{subsubsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.5}Conclusión del análisis comparativo}{14}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Análisis del Problema}{15}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Vista del Modelo de Dominio}{16}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Definición de Casos de Uso}{16}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Actores}{17}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Diagrama de Casos de Uso}{18}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Vista del Modelo de Diseño}{19}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Descripción de la Arquitectura del Sistema}{19}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}Capa de Cliente (SPA/PWA)}{19}{subsubsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.2}Capa de Seguridad}{21}{subsubsection.6.6.2}%
-\contentsline {subsubsection}{\numberline {6.6.3}Capa de Presentación (Frontend)}{21}{subsubsection.6.6.3}%
-\contentsline {subsubsection}{\numberline {6.6.4}Capa de Aplicación (Backend)}{21}{subsubsection.6.6.4}%
-\contentsline {subsubsection}{\numberline {6.6.5}Capa de Datos}{22}{subsubsection.6.6.5}%
-\contentsline {subsection}{\numberline {6.7}Descomposición en subsistemas}{22}{subsection.6.7}%
-\contentsline {subsubsection}{\numberline {6.7.1}Subsistema de Cliente}{22}{subsubsection.6.7.1}%
-\contentsline {subsubsection}{\numberline {6.7.2}Subsistema de Seguridad}{22}{subsubsection.6.7.2}%
-\contentsline {subsubsection}{\numberline {6.7.3}Subsistema de Presentación (Frontend)}{23}{subsubsection.6.7.3}%
-\contentsline {subsubsection}{\numberline {6.7.4}Subsistema de Aplicación (Backend)}{23}{subsubsection.6.7.4}%
-\contentsline {subsubsection}{\numberline {6.7.5}Subsistema de Datos}{23}{subsubsection.6.7.5}%
-\contentsline {section}{\numberline {7}Implementación}{24}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Diagrama de Deployment de UML}{24}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Tecnologías a utilizar}{24}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Frontend}{26}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Backend}{26}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Horas Dedicadas}{27}{subsection.7.5}%
-\contentsline {subsubsection}{\numberline {7.5.1}Etapa 1: Documentación y Análisis}{27}{subsubsection.7.5.1}%
-\contentsline {subsubsection}{\numberline {7.5.2}Etapa 2: Desarrollo}{27}{subsubsection.7.5.2}%
-\contentsline {subsubsection}{\numberline {7.5.3}Etapa 3: Testing, Documentación Final y Presentación}{27}{subsubsection.7.5.3}%
-\contentsline {section}{\numberline {8}Gestión de Proyecto}{27}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Entorno de Desarrollo}{28}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Tecnologías utilizadas}{29}{subsection.8.2}%
-\contentsline {subsubsection}{\numberline {8.2.1}Cliente}{29}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Servidor}{29}{subsubsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.3}Servicios y API}{30}{subsubsection.8.2.3}%
-\contentsline {subsubsection}{\numberline {8.2.4}Persistencia y Base de Datos}{30}{subsubsection.8.2.4}%
-\contentsline {subsubsection}{\numberline {8.2.5}Seguridad}{30}{subsubsection.8.2.5}%
-\contentsline {subsubsection}{\numberline {8.2.6}Herramientas de Construcción, Testing y DevOps}{31}{subsubsection.8.2.6}%
-\contentsline {section}{\numberline {9}Problemas Encontrados}{31}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Reestructuración del Módulo de Germinación}{31}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Cambio de Requisitos}{32}{subsection.9.2}%
-\contentsline {section}{\numberline {10}Testing de la Aplicación Desarrollada}{32}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Testing General del Proyecto}{32}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Pruebas Manuales Iniciales}{32}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Pruebas en Backend (Spring Boot)}{33}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Pruebas en Frontend (Next.js + TypeScript)}{33}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Pruebas Manuales en Web y PWA}{33}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}Pruebas End-to-End (E2E)}{33}{subsection.10.6}%
-\contentsline {subsection}{\numberline {10.7}Conclusión}{34}{subsection.10.7}%
-\contentsline {section}{\numberline {11}La Solución Desarrollada}{34}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Objetivos de la Solución}{34}{subsection.11.1}%
-\contentsline {subsubsection}{\numberline {11.1.1}Gestión de Lotes de Semillas}{35}{subsubsection.11.1.1}%
-\contentsline {subsubsection}{\numberline {11.1.2}Análisis de Calidad}{35}{subsubsection.11.1.2}%
-\contentsline {paragraph}{\numberline {11.1.2.1}Pureza Física}{35}{paragraph.11.1.2.1}%
-\contentsline {paragraph}{\numberline {11.1.2.2}Germinación}{35}{paragraph.11.1.2.2}%
-\contentsline {paragraph}{\numberline {11.1.2.3}DOSN (Determinación de Otras Semillas en Número)}{35}{paragraph.11.1.2.3}%
-\contentsline {paragraph}{\numberline {11.1.2.4}PMS (Peso de Mil Semillas)}{36}{paragraph.11.1.2.4}%
-\contentsline {paragraph}{\numberline {11.1.2.5}Tetrazolio}{36}{paragraph.11.1.2.5}%
-\contentsline {subsubsection}{\numberline {11.1.3}Flujo de Trabajo del Laboratorio}{36}{subsubsection.11.1.3}%
-\contentsline {subsubsection}{\numberline {11.1.4}Reportes y Exportaciones}{36}{subsubsection.11.1.4}%
-\contentsline {section}{\numberline {12}Conclusiones}{36}{section.12}%
-\contentsline {section}{\numberline {13}Trabajos a Futuro}{37}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Módulo de auditorías y control de calidad}{37}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Gestión documental avanzada}{38}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}Automatización de cálculos y validaciones normativas}{38}{subsection.13.3}%
-\contentsline {subsection}{\numberline {13.4}Optimización del flujo de trabajo}{38}{subsection.13.4}%
-\contentsline {subsection}{\numberline {13.5}Integración con sistemas externos}{38}{subsection.13.5}%
-\contentsline {section}{\numberline {14}Referencias}{39}{section.14}%
+\contentsline {section}{Agradecimientos}{4}{Doc-Start}%
+\contentsline {section}{Resumen}{4}{Doc-Start}%
+\contentsline {section}{\numberline {1}Introducción}{5}{section.1}%
+\contentsline {section}{\numberline {2}Objetivos Planteados y Resultados Esperados}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Objetivos específicos}{7}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Estado del Arte}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Marco Teórico}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}La Transición Hacia Sistemas Web}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Tecnologías}{9}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Frontend: React + TypeScript}{9}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Backend: Java + Spring Boot}{10}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Base de Datos: PostgreSQL}{10}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}Infraestructura y Arquitectura}{10}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.4}Soluciones Similares}{11}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Airtable}{11}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Smartsheet}{12}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Odoo}{13}{subsubsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.5}Conclusión del análisis comparativo}{14}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Análisis del Problema}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Vista del Modelo de Dominio}{15}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Definición de Casos de Uso}{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Actores}{16}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Diagrama de Casos de Uso}{17}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Vista del Modelo de Diseño}{17}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Descripción de la Arquitectura del Sistema}{19}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Capa de Cliente (SPA/PWA)}{19}{subsubsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.2}Capa de Seguridad}{19}{subsubsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.3}Capa de Presentación (Frontend)}{21}{subsubsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.4}Capa de Aplicación (Backend)}{21}{subsubsection.4.6.4}%
+\contentsline {subsubsection}{\numberline {4.6.5}Capa de Datos}{21}{subsubsection.4.6.5}%
+\contentsline {subsection}{\numberline {4.7}Descomposición en subsistemas}{22}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Subsistema de Cliente}{22}{subsubsection.4.7.1}%
+\contentsline {subsubsection}{\numberline {4.7.2}Subsistema de Seguridad}{22}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.3}Subsistema de Presentación (Frontend)}{23}{subsubsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.4}Subsistema de Aplicación (Backend)}{23}{subsubsection.4.7.4}%
+\contentsline {subsubsection}{\numberline {4.7.5}Subsistema de Datos}{23}{subsubsection.4.7.5}%
+\contentsline {section}{\numberline {5}Implementación}{24}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Diagrama de Deployment de UML}{24}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Tecnologías a utilizar}{24}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Frontend}{26}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Backend}{26}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Horas Dedicadas}{27}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Etapa 1: Documentación y Análisis}{27}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Etapa 2: Desarrollo}{27}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Etapa 3: Testing, Documentación Final y Presentación}{27}{subsubsection.5.5.3}%
+\contentsline {section}{\numberline {6}Gestión de Proyecto}{27}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Entorno de Desarrollo}{28}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Tecnologías utilizadas}{29}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Cliente}{29}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Servidor}{29}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Servicios y API}{30}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Persistencia y Base de Datos}{30}{subsubsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.5}Seguridad}{30}{subsubsection.6.2.5}%
+\contentsline {subsubsection}{\numberline {6.2.6}Herramientas de Construcción, Testing y DevOps}{31}{subsubsection.6.2.6}%
+\contentsline {section}{\numberline {7}Problemas Encontrados}{31}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Reestructuración del Módulo de Germinación}{31}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Cambio de Requisitos}{32}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Testing de la Aplicación Desarrollada}{32}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Testing General del Proyecto}{32}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Pruebas Manuales Iniciales}{32}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Pruebas en Backend (Spring Boot)}{33}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Pruebas en Frontend (Next.js + TypeScript)}{33}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Pruebas Manuales en Web y PWA}{33}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Pruebas End-to-End (E2E)}{33}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Conclusión}{34}{subsection.8.7}%
+\contentsline {section}{\numberline {9}La Solución Desarrollada}{34}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Objetivos de la Solución}{34}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Gestión de Lotes de Semillas}{35}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Análisis de Calidad}{35}{subsubsection.9.1.2}%
+\contentsline {paragraph}{\numberline {9.1.2.1}Pureza Física}{35}{paragraph.9.1.2.1}%
+\contentsline {paragraph}{\numberline {9.1.2.2}Germinación}{35}{paragraph.9.1.2.2}%
+\contentsline {paragraph}{\numberline {9.1.2.3}DOSN (Determinación de Otras Semillas en Número)}{35}{paragraph.9.1.2.3}%
+\contentsline {paragraph}{\numberline {9.1.2.4}PMS (Peso de Mil Semillas)}{36}{paragraph.9.1.2.4}%
+\contentsline {paragraph}{\numberline {9.1.2.5}Tetrazolio}{36}{paragraph.9.1.2.5}%
+\contentsline {subsubsection}{\numberline {9.1.3}Flujo de Trabajo del Laboratorio}{36}{subsubsection.9.1.3}%
+\contentsline {subsubsection}{\numberline {9.1.4}Reportes y Exportaciones}{36}{subsubsection.9.1.4}%
+\contentsline {section}{\numberline {10}Conclusiones}{36}{section.10}%
+\contentsline {section}{\numberline {11}Trabajos a Futuro}{37}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Módulo de auditorías y control de calidad}{37}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Gestión documental avanzada}{38}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Automatización de cálculos y validaciones normativas}{38}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Optimización del flujo de trabajo}{38}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Integración con sistemas externos}{38}{subsection.11.5}%
+\contentsline {section}{\numberline {12}Referencias}{39}{section.12}%

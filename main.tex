@@ -20,6 +20,8 @@
 % Buscar imágenes en la carpeta images/ por conveniencia
 \graphicspath{{images/}}
 \usepackage{enumitem}
+% Forzar justificado completo en todo el documento
+\usepackage{ragged2e}
 \usepackage{hyperref}
 % Mejorar marcadores PDF para niveles personalizados
 \usepackage{bookmark}
@@ -32,8 +34,12 @@
 % `\subsubsubsection` como un alias a `\paragraph` y
 % adaptamos el formato de `\paragraph` para que sea desplegado
 % (no run-in) y numerado cuando `secnumdepth>=4`.
+% Mostrar numeración hasta nivel 4 (para numerar 1.2.1, 1.2.2, etc.)
+% pero mostrar en el índice solo hasta 2 niveles
 \setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}
+\setcounter{tocdepth}{2}
+% Renombrar el título del índice a 'Tabla de contenidos'
+\addto\captionsspanish{\renewcommand{\contentsname}{Tabla de contenidos}}
 \makeatletter
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
   {3.25ex \@plus 1ex \@minus .2ex}%
@@ -59,20 +65,32 @@
 \begin{document}
 
 % Portada personalizada en una página independiente
+% Forzar justificado en todo el documento
+\justifying
 \begin{titlepage}
     \centering
     \vspace*{2cm}
     {\LARGE\bfseries Sistema de Gestión de Laboratorio de Semillas (SGLS)\par}
     \vspace{2cm}
     {\large Nadia Gorría, Nahuel Perdomo \& Milagros Vairo.\par}
+    {\large Tutor: Nicolás Escobar\par}
     \vspace{1em}
-    {\large Proyecto Final de la Carrera Tecnólogo Informático\par}
+    {\large Proyecto Final de la Carrera Tecnólogo en Informática\par}
     \vspace{1.5em}
     {\large Diciembre 2025\par}
     \vspace{1.5em}
     {\large Universidad Tecnológica del Uruguay\par}
-    {\large SEDE: San José de Mayo\par}
+    {\large Sede: San José de Mayo\par}
     \vfill
+    % Logos en una sola línea al pie de la portada: anchos iguales y separador
+    \begin{center}
+      \vspace{1em}
+      % Usar la imagen combinada que agrupa los tres logos a lo largo del pie
+      \begin{center}
+        \vspace{0.5em}
+        \includegraphics[width=0.95\textwidth]{FooterLogos.png}
+      \end{center}
+    \end{center}
 \end{titlepage}
 \clearpage
 
@@ -98,8 +116,8 @@
 \FloatBarrier
 \input{sections/12-conclusiones.tex}
 \input{sections/13-trabajos_futuro.tex}
-\clearpage
 \FloatBarrier
+\clearpage
 \input{sections/14-referencias.tex}
 
 \end{document}

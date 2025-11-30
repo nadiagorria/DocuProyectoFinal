@@ -1,5 +1,17 @@
 \begin{thebibliography}{10}
 
+\bibitem{airtable}
+{Airtable}.
+\newblock Airtable -- spreadsheet-database hybrid for collaboration.
+\newblock \url{https://airtable.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{aws}
+{Amazon Web Services (AWS)}.
+\newblock Amazon ec2 y servicios relacionados -- infraestructura en la nube.
+\newblock \url{https://aws.amazon.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
 \bibitem{docker}
 {Docker, Inc.}
 \newblock Docker -- contenedores para desarrollo y despliegue.
@@ -18,16 +30,40 @@
 \newblock \url{http://www.fao.org}, 2014.
 \newblock Recuperado: 26 noviembre 2025.
 
+\bibitem{git}
+{Git Community}.
+\newblock Git -- sistema de control de versiones distribuido.
+\newblock \url{https://git-scm.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{github}
+{GitHub, Inc.}
+\newblock Github -- plataforma para alojamiento y revisión de código.
+\newblock \url{https://github.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
 \bibitem{googlemeet}
 {Google LLC}.
 \newblock Google meet -- videoconferencias y reuniones en línea.
 \newblock \url{https://meet.google.com/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
+\bibitem{hibernate}
+{Hibernate Community}.
+\newblock Hibernate orm -- marco de mapeo objeto-relacional para java.
+\newblock \url{https://hibernate.org/orm/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
 \bibitem{rfc6455}
 {IETF}.
 \newblock Protocolo websocket -- rfc 6455.
 \newblock \url{https://datatracker.ietf.org/doc/html/rfc6455}, 2011.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{rfc6238}
+{IETF}.
+\newblock Time-based one-time password algorithm (totp) -- rfc 6238.
+\newblock \url{https://datatracker.ietf.org/doc/html/rfc6238}, 2011.
 \newblock Recuperado: 26 noviembre 2025.
 
 \bibitem{rfc7519}
@@ -48,6 +84,18 @@
 \newblock Disponible en \url{https://www.seedtest.org}. Recuperado: 26
   noviembre 2025.
 
+\bibitem{jest}
+{Jest Team}.
+\newblock Jest -- framework de pruebas para javascript.
+\newblock \url{https://jestjs.io/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{intellij}
+{JetBrains}.
+\newblock Intellij idea -- entorno de desarrollo integrado para java.
+\newblock \url{https://www.jetbrains.com/idea/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
 \bibitem{junit5}
 {JUnit Team}.
 \newblock Gu\'ia de usuario de junit 5.
@@ -60,10 +108,28 @@
 \newblock \url{https://www.whatsapp.com/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
+\bibitem{vscode}
+{Microsoft}.
+\newblock Visual studio code -- editor de código fuente.
+\newblock \url{https://code.visualstudio.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{mockito}
+{Mockito Team}.
+\newblock Mockito -- marco para realizar mocks y pruebas unitarias en java.
+\newblock \url{https://site.mockito.org/}, 2023.
+\newblock Recuperado: 26 noviembre 2025.
+
 \bibitem{notion}
 {Notion Labs}.
 \newblock Notion -- gestión de proyectos y documentación colaborativa.
 \newblock \url{https://www.notion.so/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{odoo}
+{Odoo S.A.}
+\newblock Odoo -- open source suite of business applications.
+\newblock \url{https://www.odoo.com/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
 \bibitem{openapi}
@@ -78,11 +144,54 @@
 \newblock \url{https://www.postgresql.org/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
+\bibitem{radixui}
+{Radix Labs}.
+\newblock Radix ui -- componentes accesibles para interfaces web.
+\newblock \url{https://www.radix-ui.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{shadcn}
+{shadcn}.
+\newblock shadcn/ui -- conjunto de componentes y utilidades para react.
+\newblock \url{https://ui.shadcn.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{smartsheet}
+{Smartsheet Inc.}
+\newblock Smartsheet -- work management and collaboration platform.
+\newblock \url{https://www.smartsheet.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
 \bibitem{spring-boot}
 {Spring Team}.
 \newblock Documentaci\'on de referencia de spring boot.
 \newblock
   \url{https://docs.spring.io/spring-boot/docs/current/reference/html/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{spring-security}
+{Spring Team}.
+\newblock Spring security -- marco para seguridad en aplicaciones java.
+\newblock \url{https://spring.io/projects/spring-security}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{tailwindcss}
+{Tailwind Labs}.
+\newblock Tailwind css -- framework de utilidades para diseño.
+\newblock \url{https://tailwindcss.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{rtl}
+{Testing Library}.
+\newblock React testing library -- pruebas para componentes react.
+\newblock \url{https://testing-library.com/docs/react-testing-library/intro/},
+  2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{toggl}
+{Toggl Track}.
+\newblock Toggl track -- gestión del tiempo y registro de horas.
+\newblock \url{https://toggl.com/track}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
 \bibitem{nextjs}

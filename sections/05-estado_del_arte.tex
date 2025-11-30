@@ -1,4 +1,4 @@
-\section{Estado del Arte}
+\section{Marco Teórico}
 En los últimos años, la transformación digital se ha vuelto una realidad en prácticamente todas las organizaciones, tanto públicas como privadas. Este proceso busca mejorar la forma en que se gestionan los datos y se llevan adelante las tareas diarias. En el sector agropecuario, especialmente, la digitalización ha demostrado ser clave para lograr una mayor trazabilidad, precisión en los registros y eficiencia operativa. Por este motivo, cada vez más instituciones están dejando atrás los documentos en papel, las planillas de Excel y los procedimientos dispersos, y están migrando hacia plataformas web que centralizan y organizan la información de forma más segura y confiable. Esta tendencia está ampliamente respaldada por estudios académicos y por la práctica común de centros de investigación y laboratorios en todo el mundo.
 
 \cite{inia-uy,ista2023,fao-seed}
@@ -6,7 +6,7 @@ En los últimos años, la transformación digital se ha vuelto una realidad en p
 El proyecto desarrollado para el INIA se inscribe en esta línea de evolución tecnológica. La institución necesita una herramienta digital que permita gestionar sus análisis de forma integral: registrar y consultar muestras (lotes), administrar configuraciones, controlar distintos roles de usuario, generar reportes, exportar información y también incorporar datos históricos provenientes de sistemas anteriores. Este capítulo presenta el marco conceptual, tecnológico y comparativo que justifica la solución propuesta y contextualiza su diseño dentro de las tendencias actuales de la industria del software.
 
 \cite{inia-uy}
-\subsection{Marco Teórico}
+
 En estos últimos años las organizaciones adoptaron hojas de cálculo como herramienta base para almacenar información gracias a su accesibilidad, bajo costo, flexibilidad y facilidad de uso. Sin embargo, a medida que los procesos se vuelven más complejos y los volúmenes de datos crecen, estos mecanismos se vuelven insuficientes y arriesgados para labores críticas. Las limitaciones más comunes incluyen:
 \begin{itemize}
     \item \textbf{Escalabilidad restringida:} Las hojas de cálculo no están diseñadas para manejar grandes volúmenes de datos ni crecer de forma sostenible. A medida que aumentan los registros, las operaciones se vuelven lentas, propensas a fallos y difíciles de mantener.
@@ -26,47 +26,10 @@ Las planillas suelen funcionar bien en etapas iniciales, pero a medida que crece
 \end{itemize}
 \cite{ista2023,fao-seed}
 Este enfoque tecnológico es el más utilizado en laboratorios, centros de investigación y organizaciones científicas para gestionar muestras, controles de calidad, análisis y trazabilidad de procesos experimentales.
-\subsection{Tecnologías}
-El proyecto adopta tecnologías modernas, robustas y ampliamente utilizadas en la industria. La selección busca equilibrio entre estabilidad, madurez, facilidad de mantenimiento y alineación con estándares profesionales.
-\cite{spring-boot,nextjs}
-\subsubsection{Frontend: React + TypeScript}
-React es uno de los frameworks más utilizados globalmente para construir interfaces de usuario debido a:
-\begin{itemize}
-    \item Su modelo de componentes reutilizables
-    \item Su alto rendimiento mediante virtual DOM
-    \item Un ecosistema amplio de librerías
-    \item Facilidad para construir SPA (Single Page Applications)
-\end{itemize}
-El uso de TypeScript aporta tipado estático, reduce errores y mejora la mantenibilidad del código.
-\subsubsection{Backend: Java + Spring Boot}
-Spring Boot es estándar en el desarrollo empresarial gracias a:
-\begin{itemize}
-    \item Integración nativa con Spring Security
-    \item Soporte simplificado para APIs REST
-    \item Inyección de dependencias y modularidad
-    \item Comunidad madura y documentación extensa
-\end{itemize}
-Java 21, como versión LTS, asegura estabilidad a largo plazo.
-\subsubsection{Base de Datos: PostgreSQL}
-Elegida por ser:
-\begin{itemize}
-    \item Open source
-    \item Altamente confiable
-    \item Compatible con operaciones complejas
-    \item Escalable y sólida para manejo de datos institucionales
-\end{itemize}
-\subsubsection{Infraestructura y Arquitectura}
-\begin{itemize}
-    \item Modelo cliente-servidor (frontend Next.js – backend Spring Boot)
-    \item Arquitectura en tres capas (presentación – servicios – datos)
-    \item Uso de Docker para portabilidad y despliegue
-    \item Estructura modular por dominios (análisis, seguridad, notificaciones, usuarios)
-    \item Comunicación vía REST y WebSocket (notificaciones en tiempo real) \cite{rfc6455,rfc7519}
-\end{itemize}
 \subsection{Soluciones Similares}
 En el mercado existen herramientas orientadas a gestionar información estructurada, colaborar en equipos y reemplazar flujos basados en planillas. Aunque ninguna se adapta exactamente a los procesos complejos del INIA, sirven como referencia sobre cómo la industria resuelve problemas similares.
 \subsubsection{Airtable}
-Airtable combina conceptos de base de datos con la interfaz amigable de una hoja de cálculo. Es una plataforma low-code orientada a pequeños proyectos y equipos que necesitan digitalizar procesos sin desarrollar software propio.
+Airtable combina conceptos de base de datos con la interfaz amigable de una hoja de cálculo. Es una plataforma \textit{low-code} orientada a pequeños proyectos y equipos que necesitan digitalizar procesos sin desarrollar software propio.
 
 Ventajas:
 \begin{itemize}
@@ -110,36 +73,3 @@ Limitaciones:
     \caption{Ejemplo: interfaz de Smartsheet mostrando una vista tipo hoja de cálculo y reportes.}
     \label{fig:smartsheet}
 \end{figure}
-\subsubsection{Odoo}
-Odoo es un ERP (Planificador de Recursos Empresariales) modular que integra distintos dominios empresariales.
-
-Ventajas:
-\begin{itemize}
-    \item Gran variedad de módulos
-    \item Comunidad activa
-    \item Escalabilidad para múltiples áreas
-\end{itemize}
-Limitaciones:
-\begin{itemize}
-    \item Instalación y configuración complejas
-    \item Sobrecarga funcional para proyectos específicos
-    \item Dificultad de adaptación a procesos científicos y de laboratorio
-\end{itemize}
-\cite{odoo}
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{Odoo.png}
-    \caption{Ejemplo: módulo de Odoo con vistas integradas de gestión de recursos.}
-    \label{fig:odoo}
-\end{figure}
-\subsection{Conclusión del análisis comparativo}
-Si bien las herramientas ofrecen funcionalidades útiles, no cumplen de forma precisa con los requerimientos del INIA, especialmente en lo relativo a:
-\begin{itemize}
-    \item Procesos de laboratorio
-    \item Gestión de análisis y múltiples roles
-    \item Validaciones específicas
-    \item Importación de datos legados
-    \item Adaptación a flujos técnicos
-\end{itemize}
-Por ello, un sistema a medida es la opción más adecuada para atender las necesidades reales y garantizar la adaptación total a los procesos internos y ofrecer la flexibilidad necesaria para futuros cambios o expansiones.
-\cite{inia-uy,ista2023}

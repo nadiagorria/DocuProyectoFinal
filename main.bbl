@@ -12,6 +12,12 @@
 \newblock \url{https://aws.amazon.com/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
+\bibitem{zod}
+{Colinhacks}.
+\newblock Zod -- typescript-first schema declaration and validation library.
+\newblock \url{https://github.com/colinhacks/zod}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
 \bibitem{docker}
 {Docker, Inc.}
 \newblock Docker -- contenedores para desarrollo y despliegue.
@@ -126,12 +132,6 @@
 \newblock \url{https://www.notion.so/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
-\bibitem{odoo}
-{Odoo S.A.}
-\newblock Odoo -- open source suite of business applications.
-\newblock \url{https://www.odoo.com/}, 2024.
-\newblock Recuperado: 26 noviembre 2025.
-
 \bibitem{openapi}
 {OpenAPI Initiative}.
 \newblock Especificaci\'on openapi / swagger -- documentaci\'on de apis.
@@ -148,6 +148,13 @@
 {Radix Labs}.
 \newblock Radix ui -- componentes accesibles para interfaces web.
 \newblock \url{https://www.radix-ui.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{react-hook-form}
+{React Hook Form Team}.
+\newblock React hook form -- performant, flexible and extensible forms for
+  react.
+\newblock \url{https://react-hook-form.com/}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
 \bibitem{shadcn}
@@ -179,6 +186,12 @@
 {Tailwind Labs}.
 \newblock Tailwind css -- framework de utilidades para diseño.
 \newblock \url{https://tailwindcss.com/}, 2024.
+\newblock Recuperado: 26 noviembre 2025.
+
+\bibitem{react-query}
+{TanStack / React Query}.
+\newblock React query / tanstack query -- data fetching and caching for react.
+\newblock \url{https://tanstack.com/query/latest}, 2024.
 \newblock Recuperado: 26 noviembre 2025.
 
 \bibitem{rtl}

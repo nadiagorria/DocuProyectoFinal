@@ -6,6 +6,9 @@ Cada funcionalidad fue probada primero de manera manual, revisando su comportami
 \subsection{Pruebas en Backend (Spring Boot)}
 En el backend, desarrollado con Spring Boot, se implementaron pruebas unitarias e integraciones utilizando JUnit, Mockito y la herramienta de cobertura JaCoCo. Esto permitió verificar la lógica de negocio, los controladores y varios de los servicios internos. La cobertura superó el 80\%, un valor adecuado para tener un buen nivel de confianza en el comportamiento de las áreas más importantes del código.
 \cite{spring-boot,junit5,mockito,jacoco}
+
+De todos modos, se entiende que un porcentaje elevado de cobertura no garantiza que el software esté libre de errores. La cobertura solo indica qué líneas fueron ejecutadas durante las pruebas, pero no asegura que todas las variantes, casos límite o comportamientos inesperados hayan sido contemplados. Por esta razón, las pruebas automatizadas se complementaron con verificaciones manuales, exploratorias y de integración, lo que permitió detectar situaciones que no siempre quedan reflejadas en los tests automatizados y, en conjunto, mejorar la calidad general del backend.
+
 \subsection{Pruebas en Frontend (Next.js + TypeScript)}
 El frontend, construido con Next.js y TypeScript, también incorporó pruebas automatizadas mediante Jest y React Testing Library. Estas pruebas abarcaron componentes, funciones auxiliares y ciertos elementos de la lógica de presentación. Al igual que en el backend, el nivel de cobertura superó el 80\%, lo que ayudó a detectar errores de visualización, manejo de datos y algunos detalles que surgieron durante la integración con la API.
 \cite{nextjs,jest,rtl}

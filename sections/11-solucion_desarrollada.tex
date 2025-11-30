@@ -2,7 +2,7 @@
 El Sistema de Gestión de Análisis de Semillas desarrollado para INIA es una plataforma web integral que digitaliza y centraliza todo el proceso de análisis de calidad de semillas, reemplazando el manejo fragmentado que anteriormente se realizaba en múltiples planillas de Excel. La solución permite registrar lotes que ingresan al laboratorio, realizar distintos tipos de análisis especializados y generar reportes estandarizados para INIA e INASE con mayor precisión, trazabilidad y control.
 \cite{inia-uy,spring-boot,nextjs}
 \subsection{Objetivos de la Solución}
-La solución tuvo como objetivos principales:
+La solución desarrollada busca digitalizar y unificar el trabajo del laboratorio de semillas. En particular, se propuso:
 \begin{itemize}
     \item Centralizar la información de todos los análisis en un único sistema accesible desde cualquier dispositivo.
     \item Estandarizar el registro de los lotes de semillas y de los resultados obtenidos en cada análisis.
@@ -14,49 +14,74 @@ La solución tuvo como objetivos principales:
     \cite{rfc7519}
 \end{itemize}
 \subsubsection{Gestión de Lotes de Semillas}
+El sistema soporta los análisis de Pureza Física, Germinación, DOSN, PMS y Tetrazolio, permitiendo:
 \begin{itemize}
-    \item Registro de lotes ingresados al laboratorio con datos como especie, variedad, empresa, kilos y humedad.
-    \item Visualización y edición de la información del lote.
-    \item Asociación automática de lotes a sus respectivos análisis.
+    \item Carga estructurada de resultados y repeticiones.
+    \item Cálculos automáticos (porcentajes, promedios, germinación final, etc.).
+    \item Validaciones básicas según normas vigentes y señalización de valores críticos.
 \end{itemize}
-\subsubsection{Análisis de Calidad}
+\subsubsection{Registro de análisis de calidad}
 El sistema permite realizar distintos análisis obligatorios en los laboratorios de semillas:
-\paragraph{Pureza Física}
 \begin{itemize}
     \item Registro de porcentajes de semilla pura, materia inerte, otros cultivos y malezas.
     \item Cálculos automáticos de proporciones y verificaciones según normas vigentes.
 \end{itemize}
-\paragraph{Germinación}
-\begin{itemize}
-    \item Gestión de múltiples repeticiones por muestra.
-    \item Registro de conteos en diferentes días.
-    \item Cálculo automático de germinación final.
-\end{itemize}
-\paragraph{DOSN (Determinación de Otras Semillas en Número)}
-\begin{itemize}
-    \item Identificación y registro de semillas de malezas peligrosas.
-    \item Validación automática de especies críticas.
-\end{itemize}
-\paragraph{PMS (Peso de Mil Semillas)}
-\begin{itemize}
-    \item Registro de repeticiones y cálculo del peso promedio.
-    \item Indicadores automáticos de calidad del lote.
-\end{itemize}
-\paragraph{Tetrazolio}
-\begin{itemize}
-    \item Gestión de múltiples repeticiones por muestra
-    \item Determinación de viabilidad mediante registro visual y categorización.
-\end{itemize}
 \subsubsection{Flujo de Trabajo del Laboratorio}
 \begin{itemize}
-    \item Manejo de estados para cada análisis: EN\_PROCESO \textrightarrow{} FINALIZADO \textrightarrow{} APROBADO.
-    \item Control de modificaciones según rol del usuario.
-    \item Historial de avances y validaciones.
+    \item Manejo de estados de los análisis (EN PROCESO, FINALIZADO, APROBADO).
+    \item Restricción de acciones según el rol del usuario.
+    \item Registro del historial de cambios y validaciones realizadas.
 \end{itemize}
 \subsubsection{Reportes y Exportaciones}
 \begin{itemize}
-    \item Generación automática de reportes en Excel con las 52 columnas requeridas por INIA e INASE.
-    \item Integración con datos del lote, resultados y observaciones.
-    \item Formatos estandarizados y consistentes para auditorías y trazabilidad.
+    \item Generación automática de reportes en Excel con todas las columnas requeridas por INIA e INASE.
+    \item Integración de datos de lote, resultados y observaciones en un formato estandarizado para auditorías y trazabilidad.
     \cite{openapi,postgresql,docker}
 \end{itemize}
+En síntesis, la solución implementada cumplió con los objetivos planteados: centralizar la información del laboratorio, estandarizar el registro de lotes y análisis, mejorar la trazabilidad y facilitar el cumplimiento normativo frente a INIA e INASE.
+
+A continuación se presentan capturas de pantalla del sistema que ilustran la carga de lotes, el flujo de trabajo de los análisis y los reportes generados.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{registroDeLote.png}
+    \caption{Pantalla de Registro de Lotes: permite crear y editar la ficha de cada lote, asociar cultivares y empresas, y consultar los últimos lotes ingresados.}
+    \label{fig:registro-lote}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{ListadoDeLote.png}
+    \caption{Pantalla de Listado de Lotes: búsqueda, filtros y acceso al detalle de cada lote y sus análisis asociados.}
+    \label{fig:listado-lotes}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{RegistroDeAnalisis.png}
+    \caption{Pantalla de Registro de Análisis: selección del tipo de análisis (Pureza Física, Germinación, DOSN, PMS, Tetrazolio) y asociación al lote correspondiente.}
+    \label{fig:registro-analisis}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{CentroDeReportes.png}
+    \caption{Centro de Reportes: generación y exportación de reportes a Excel con filtros configurables.}
+    \label{fig:centro-reportes}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{PanelDeMetricas1.png}
+    \caption{Panel de métricas (1): indicadores de análisis por período.}
+    \label{fig:panel-metricas-1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{PanelDeMetricas2.png}
+    \caption{Panel de métricas (2): distribución por tipo y estado.}
+    \label{fig:panel-metricas-2}
+\end{figure}
+
+% Nota: las imágenes provienen de la carpeta `images/` del documento principal.

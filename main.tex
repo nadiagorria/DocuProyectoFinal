@@ -1,5 +1,6 @@
 % Documentación del Proyecto Final - Estilo visual APA (numerado)
-\documentclass[12pt]{article}
+% Usamos `twoside` para que \cleardoublepage respete páginas impares (derecha)
+\documentclass[12pt,twoside]{article}
 % Idioma y codificación
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
@@ -28,8 +29,16 @@
 % Evitar que las figuras floten más allá de la sección: \FloatBarrier
 \usepackage{placeins}
 
+% Para insertar automáticamente un \cleardoublepage antes de cada \section
+% (garantiza que las secciones principales comiencen en página impar).
+\usepackage{etoolbox}
+\preto\section{\cleardoublepage}
+
 % Colores (necesario para marcar horas pendientes en rojo)
 \usepackage{xcolor}
+
+% Cambiar el nombre que usa \bibliography (article class usa \refname)
+\renewcommand{\refname}{Referencias}
 
 % Añadir soporte para un cuarto nivel de secciones: reutilizamos
 % el nivel existente `paragraph` (nivel 4) para que `hyperref`

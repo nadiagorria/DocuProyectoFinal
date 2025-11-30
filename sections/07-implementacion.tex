@@ -10,22 +10,70 @@ El diagrama también reflejó la forma en que los usuarios accedieron a la aplic
 	\caption{Diagrama de \textit{deployment} (UML) que muestra la distribución de nodos y contenedores en la infraestructura de despliegue.}
 	\label{fig:deploy}
 \end{figure}
-\subsection{Tecnologías a utilizar}
-Las tecnologías empleadas en el proyecto se seleccionaron en función de los requerimientos funcionales, el rendimiento esperado y la necesidad de contar con una arquitectura flexible y mantenible. Se optó por una combinación de herramientas modernas y ampliamente utilizadas en la industria, lo que permitió asegurar un entorno estable durante el desarrollo y el despliegue. La infraestructura se apoyó en contenedores Docker ejecutados sobre una instancia EC2 de AWS, lo que facilitó la portabilidad, el aislamiento y la gestión individual de cada servicio del sistema.
-
-Además, se adoptaron tecnologías que ofrecieron buen soporte para el trabajo con APIs, gestión de datos, desarrollo de interfaces web y compatibilidad con PWA. Esta selección permitió construir una solución sólida y coherente, manteniendo una estructura clara entre la capa de presentación, la capa de negocio y la capa de persistencia.
-\subsection{Frontend}
-El frontend se construyó con Next.js y TypeScript, una combinación que ofreció un entorno estable para desarrollar interfaces modernas y con buen rendimiento. Next.js permitió implementar renderizado híbrido (SSR/CSR) y optimizaciones automáticas que mejoraron la experiencia del usuario, mientras que TypeScript aportó tipado estático, ayudando a reducir errores y mantener el código más organizado.
+\subsection{Tecnologías utilizadas}
+\subsubsection{Cliente}
+El cliente del sistema fue diseñado como una aplicación web dinámica utilizando Next.js 14 y React 18, tecnologías ampliamente adoptadas en entornos productivos debido a su eficiencia, modularidad y soporte comunitario.
 \cite{nextjs}
 
-La aplicación también se adaptó como Progressive Web App (PWA), lo que permitió que pudiera instalarse en dispositivos móviles y funcionar con mayor fluidez en entornos donde la conectividad podía ser limitada. Al igual que los demás componentes, el frontend se ejecutó dentro de un contenedor Docker, lo que facilitó su despliegue y mantuvo la coherencia del entorno de ejecución.
-\subsection{Backend}
-El backend se desarrolló utilizando Java junto con el framework Spring Boot, una tecnología que brindó un conjunto amplio de herramientas para construir servicios web robustos y escalables. Spring Boot permitió organizar la lógica de negocio mediante controladores, servicios y repositorios, además de facilitar la configuración de la API mediante estándares REST. Esta elección favoreció la claridad en la estructura del proyecto y simplificó la integración con el resto de los componentes del sistema.
-\cite{spring-boot,junit5,jacoco}
+La estructura se organizó siguiendo las convenciones del App Router de Next.js, lo cual permitió una clara separación entre páginas, componentes y módulos de lógica, promoviendo escalabilidad y mantenibilidad.
+
+Para el desarrollo de la interfaz de usuario se utilizaron Tailwind CSS, Radix UI y Shadcn. Estas tecnologías permitieron crear una experiencia visual coherente y accesible, con componentes reutilizables y mantenibles, alineados con estándares modernos de diseño.
+\cite{tailwindcss,radixui,shadcn}
+
+La comunicación entre el frontend y el backend se realizó mediante APIs REST para la mayor parte de las operaciones, mientras que las funcionalidades en tiempo real se implementaron a través de WebSocket, permitiendo la recepción de notificaciones instantáneas y mejorando la experiencia interactiva del usuario.
+
+El aseguramiento de calidad del frontend incluyó la ejecución de pruebas automatizadas mediante Jest y React Testing Library, herramientas ampliamente utilizadas para validar el comportamiento de componentes y flujos de interacción.
+\cite{jest,rtl}
+\subsubsection{Servidor}
+El backend se implementó utilizando Java 21 con Spring Boot 3.5, aplicando una arquitectura en capas que divide la lógica de negocio, los servicios, los controladores web, los repositorios de datos y las configuraciones transversales. Esta estructura facilita el mantenimiento, reduce el acoplamiento y mejora la estabilidad del sistema.
+\cite{spring-boot}
+\subsubsection{Servicios y API}
+La API del sistema fue documentada utilizando OpenAPI/Swagger, permitiendo que tanto desarrolladores como actores externos comprendan las especificaciones de cada endpoint, formatos de datos, tipos de respuestas y códigos de error.
+\cite{openapi}
+
+El backend expone servicios REST y un canal de comunicación en tiempo real mediante WebSocket (STOMP), empleado para enviar notificaciones y eventos relevantes sin necesidad de realizar consultas repetitivas al servidor.
+\subsubsection{Persistencia y Base de Datos}
+La aplicación utiliza PostgreSQL 15, gestionado mediante Spring Data JPA, lo cual permitió automatizar tareas de persistencia y reducir la necesidad de escribir consultas SQL manuales.
+\cite{postgresql}
+
+Durante el proceso de pruebas se utilizó H2, una base de datos en memoria que permite ejecutar los tests de forma rápida, aislada y sin requerir infraestructura externa.
+\subsubsection{Seguridad}
+La seguridad del sistema se abordó mediante:
+\begin{itemize}
+    \item Spring Security para la protección de endpoints y control de roles.
+    \item JWT para la gestión de sesiones sin estado.
+    \item Autenticación en dos pasos (2FA) mediante códigos TOTP, fortaleciendo la seguridad del acceso.
+\end{itemize}
+\cite{spring-security,rfc7519,rfc6238}
+
+    Este conjunto de herramientas permitió cumplir buenas prácticas de seguridad alineadas con estándares modernos.
+\subsubsection{Herramientas de Construcción, Testing y DevOps}
+El backend fue compilado y gestionado mediante Maven, lo que permitió automatizar tareas de instalación, test y empaquetado.
+
+La calidad del código se reforzó mediante pruebas unitarias utilizando JUnit 5 y Mockito, enfocadas en validar la lógica de negocio, la interacción entre módulos y el correcto comportamiento de los componentes críticos.
+\cite{junit5,jacoco}
+
+Finalmente, el uso de Docker y Docker Compose permitió ejecutar el proyecto de forma completa (frontend, backend y base de datos) mediante entornos aislados y reproducibles, asegurando coherencia en las diferentes etapas del desarrollo.
+\cite{docker}
 
 La comunicación con la base de datos se realizó a través de JPA/Hibernate, lo que permitió manejar las entidades del dominio de forma eficiente y reducir la carga de escribir consultas SQL manuales.\cite{hibernate} El servicio funcionó dentro de un contenedor Docker, lo que facilitó su despliegue en la instancia EC2 y garantiza un entorno consistente durante todo el ciclo de vida del proyecto.
 \subsection{Horas Dedicadas}
 A continuación se detallarán los registros de horas por etapa del proyecto. Estos fueron gestionados utilizando un proyecto en Toggl.
+
+% Resumen rápido de horas por etapa
+\begin{center}
+\begin{tabular}{l r}
+\hline
+	extbf{Etapa} & \textbf{Horas} \\
+\hline
+Etapa 1 & 60 \\
+Etapa 2 & 553 \\
+Etapa 3 & \textcolor{red}{??} \\
+\hline
+\end{tabular}
+\end{center}
+
+% Nota: Para que \texttt{\textcolor{red}} funcione, asegúrate de cargar el paquete \texttt{xcolor} en el preámbulo si aún no está incluido.
 \subsubsection{Etapa 1: Documentación y Análisis}
 \textbf{Período:} Desde el 14 de agosto al 08 de septiembre de 2025.
 La primera etapa se enfocó principalmente en recolectar la información pertinente con las clientes y documentar las características inicialmente establecidas para comenzar con el desarrollo adecuado de la aplicación web.

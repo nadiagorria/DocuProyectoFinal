@@ -8,9 +8,17 @@ A partir de este análisis, se estudiaron cuidadosamente los procesos actuales, 
 El modelo de dominio reúne todas las entidades del sistema y muestra cómo se relacionan todas entre sí. Tener esta vista clara fue fundamental para ordenar las ideas y asegurarse de que el sistema reflejase fielmente la forma en que se trabaja en el laboratorio.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{\detokenize{Diagrama de Dominio.png}}
+    % Mostrar el diagrama de dominio ocupando la mayor área posible en la página
+    \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{Diagrama de Dominio.png}}
     \caption{Modelo de dominio: entidades y relaciones principales.}
     \label{fig:modelo_dominio}
+\end{figure}
+\begin{figure}[htbp]
+    \centering
+    % Enumeration del dominio, mostrado inmediatamente después para referencia
+    \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{Enumeration Dominio.png}}
+    \caption{Enumeración del dominio: valores y tipos constantes usados en el modelo.}
+    \label{fig:enumeration_dominio}
 \end{figure}
 \subsection{Definición de Casos de Uso}
 Los casos de uso ayudan a describir qué puede hacer cada usuario y cómo se relacionan las acciones con las funcionalidades disponibles en el sistema. A partir de ellos se identificaron tareas clave como crear y gestionar lotes y análisis, administrar catálogos, generar reportes y cargar datos históricos.
@@ -44,12 +52,33 @@ Los actores son los elementos externos al sistema, ya sean usuarios o sistemas, 
 \end{itemize}
 \subsection{Diagrama de Casos de Uso}
 El siguiente diagrama muestra los principales casos de uso del sistema:
-\begin{figure}[htbp]
+
+\vspace{1em}
+
+% Cada parte del diagrama de casos de uso se presenta en una figura separada
+% y en tamaño máximo para mejorar la legibilidad en el documento impreso.
+\begin{figure}[p]
     \centering
-    \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{\detokenize{Diagrama Casos de Uso.png}}
-    \caption{Diagrama de casos de uso: principales interacciones entre actores y el sistema.}
+    \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{casos de uso pt1.drawio.png}}
+    \caption{Diagrama de casos de uso -- Parte 1/3 (dividido para mejorar la visualización).}
     \label{fig:casos_uso}
 \end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{casos de uso pt2.drawio.png}}
+    \caption{Diagrama de casos de uso -- Parte 2/3.}
+    \label{fig:casos_uso_pt2}
+\end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{casos de uso pt3.drawio.png}}
+    \caption{Diagrama de casos de uso -- Parte 3/3.}
+    \label{fig:casos_uso_pt3}
+\end{figure}
+
+\FloatBarrier
+\noindent\textbf{Nota:} Para consultar la especificación completa de los casos de uso del sistema, incluyendo actores, precondiciones, flujos y postcondiciones, ver el \textbf{Anexo 1 -- Modelo de Casos de Uso} en el documento \texttt{Anexos.pdf}.
+
 \subsection{Vista del Modelo de Diseño}
 El diseño propuesto para la arquitectura del sistema busca mantener un equilibrio claro entre simplicidad, organización y capacidad de crecimiento. La estructura en capas responde a la necesidad de separar responsabilidades y asegurar que cada parte del sistema pueda evolucionar sin generar impacto innecesario en las demás. Este enfoque no solo mejora la mantenibilidad, sino que también facilita la incorporación de nuevas funcionalidades en el futuro. 
 
@@ -58,7 +87,8 @@ El diseño propuesto para la arquitectura del sistema busca mantener un equilibr
 En esta arquitectura, los servicios adicionales que utiliza el sistema, como el envío de correos o la verificación en dos pasos, se integran directamente dentro de la capa de Aplicación. Esto evita complejidades innecesarias en la representación del diseño y mantiene el diagrama coherente y simple, sin dejar de reflejar el funcionamiento real del sistema.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth,height=0.6\textheight,keepaspectratio]{\detokenize{Diagrama de Arquitectura.png}}
+    % Mostrar el diagrama de arquitectura ocupando la mayor área posible
+    \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{Diagrama de Arquitectura.png}}
     \caption{Diagrama de arquitectura: capas y componentes principales del sistema.}
     \label{fig:arquitectura}
 \end{figure}
@@ -130,3 +160,4 @@ Representa lo que usa el usuario en su navegador o como PWA instalada.
     \item Garantiza integridad, consistencia y trazabilidad de la información.
     \item Registra auditoría automática de creación y modificación de registros.
 \end{itemize}
+

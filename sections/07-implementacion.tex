@@ -50,10 +50,11 @@ Finalmente, el uso de Docker y Docker Compose permitió ejecutar el proyecto de 
 
 La comunicación con la base de datos se realizó a través de JPA/Hibernate, lo que permitió manejar las entidades del dominio de forma eficiente y reducir la carga de escribir consultas SQL manuales. El servicio funcionó dentro de un contenedor Docker, lo que facilitó su despliegue en la instancia EC2 y garantiza un entorno consistente durante todo el ciclo de vida del proyecto\cite{hibernate}.
 \subsection{Horas Dedicadas}
-A continuación se detallarán los registros de horas por etapa del proyecto. Estos fueron gestionados utilizando un proyecto en Toggl\cite{toggl}.
+A continuación se detallarán los registros de horas por etapa del proyecto. Estos fueron gestionados utilizando un proyecto en Toggl\cite{toggl}. La Tabla \ref{tab:hours-summary} muestra el resumen de horas dedicadas por etapa.
 
 % Resumen rápido de horas por etapa
-\begin{center}
+\begin{table}[h]
+\centering
 \begin{tabular}{l r}
 \hline
 	\textbf{Etapa} & \textbf{Horas} \\
@@ -63,7 +64,9 @@ Etapa 2 & 553 \\
 Etapa 3 & 86 \\
 \hline
 \end{tabular}
-\end{center}
+\caption{Resumen de horas dedicadas por etapa del proyecto}
+\label{tab:hours-summary}
+\end{table}
 
 % Nota: Para que \texttt{\textcolor{red}} funcione, asegúrate de cargar el paquete \texttt{xcolor} en el preámbulo si aún no está incluido.
 \subsubsection{Etapa 1: Documentación y Análisis}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.26)  1 DEC 2025 01:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.26)  1 DEC 2025 23:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -557,125 +557,129 @@ Underfull \vbox (badness 4378) has occurred while \output is active []
 ] [12
 
 ] [13] [14]
-<images/Airtable.png, id=173, 1606.0pt x 801.99625pt>
+<images/Airtable.png, id=175, 1606.0pt x 801.99625pt>
 File: images/Airtable.png Graphic file (type png)
 <use images/Airtable.png>
-Package pdftex.def Info: images/Airtable.png  used on input line 50.
+Package pdftex.def Info: images/Airtable.png  used on input line 48.
 (pdftex.def)             Requested size: 375.7927pt x 187.66147pt.
  [15]
-<images/Smartsheet.png, id=181, 1606.0pt x 901.3675pt>
+<images/Smartsheet.png, id=185, 1606.0pt x 901.3675pt>
 File: images/Smartsheet.png Graphic file (type png)
 <use images/Smartsheet.png>
 Package pdftex.def Info: images/Smartsheet.png  used on input line 72.
 (pdftex.def)             Requested size: 375.7927pt x 210.91364pt.
+ [16 <./images/Airtable.png (PNG copy)>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-8.
+9.
 
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
-[16 <./images/Airtable.png (PNG copy)>] (sections/06-analisis_problema.tex
-[17 <./images/Smartsheet.png (PNG copy)>] [18
+(sections/06-analisis_problema.tex [17 <./images/Smartsheet.png (PNG copy)>]
+[18
 
 ]
-<images/Diagrama de Dominio.png, id=203, 4405.45876pt x 6751.2225pt>
+<images/Diagrama de Dominio.png, id=208, 4405.45876pt x 6751.2225pt>
 File: images/Diagrama de Dominio.png Graphic file (type png)
 <use images/Diagrama de Dominio.png>
-Package pdftex.def Info: images/Diagrama de Dominio.png  used on input line 12.
+Package pdftex.def Info: images/Diagrama de Dominio.png  used on input line 11.
 
 (pdftex.def)             Requested size: 390.42422pt x 598.31245pt.
-<images/Enumeration Dominio.png, id=204, 6386.86125pt x 4503.82625pt>
+<images/Enumeration Dominio.png, id=209, 6386.86125pt x 4503.82625pt>
 File: images/Enumeration Dominio.png Graphic file (type png)
 <use images/Enumeration Dominio.png>
-Package pdftex.def Info: images/Enumeration Dominio.png  used on input line 19.
+Package pdftex.def Info: images/Enumeration Dominio.png  used on input line 18.
 
 (pdftex.def)             Requested size: 469.73566pt x 331.24373pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-[20 <./images/Diagrama de Dominio.png>] [21 <./images/Enumeration Dominio.png>]
-[22]
-<images/casos de uso pt1.drawio.png, id=226, 2342.7525pt x 1611.01875pt>
+ [19] [20 <./images/Diagrama de Dominio.png>] [21 <./images/Enumeration Dominio
+.png>] [22]
+<images/casos de uso pt1.drawio.png, id=234, 2342.7525pt x 1611.01875pt>
 File: images/casos de uso pt1.drawio.png Graphic file (type png)
 <use images/casos de uso pt1.drawio.png>
 Package pdftex.def Info: images/casos de uso pt1.drawio.png  used on input line
- 62.
+ 63.
 (pdftex.def)             Requested size: 469.75761pt x 323.03383pt.
-<images/casos de uso pt2.drawio.png, id=227, 2035.605pt x 2035.605pt>
+<images/casos de uso pt2.drawio.png, id=235, 2035.605pt x 2035.605pt>
 File: images/casos de uso pt2.drawio.png Graphic file (type png)
 <use images/casos de uso pt2.drawio.png>
 Package pdftex.def Info: images/casos de uso pt2.drawio.png  used on input line
- 68.
+ 69.
 (pdftex.def)             Requested size: 469.73235pt x 469.73235pt.
-<images/casos de uso pt3.drawio.png, id=228, 2893.81125pt x 2366.8425pt>
+<images/casos de uso pt3.drawio.png, id=236, 2893.81125pt x 2366.8425pt>
 File: images/casos de uso pt3.drawio.png Graphic file (type png)
 <use images/casos de uso pt3.drawio.png>
 Package pdftex.def Info: images/casos de uso pt3.drawio.png  used on input line
- 74.
+ 75.
 (pdftex.def)             Requested size: 469.73097pt x 384.19203pt.
  [23] [24 <./images/casos de uso pt1.drawio.png>] [25 <./images/casos de uso pt
 2.drawio.png>] [26 <./images/casos de uso pt3.drawio.png>]
-<images/Diagrama de Arquitectura.png, id=253, 1207.51125pt x 2893.81125pt>
+<images/Diagrama de Arquitectura.png, id=262, 1207.51125pt x 2893.81125pt>
 File: images/Diagrama de Arquitectura.png Graphic file (type png)
 <use images/Diagrama de Arquitectura.png>
 Package pdftex.def Info: images/Diagrama de Arquitectura.png  used on input lin
-e 91.
+e 93.
 (pdftex.def)             Requested size: 249.69714pt x 598.4014pt.
- [27] [28 <./images/Diagrama de Arquitectura.png>] [29] [30] [31])
+
+[27] [28 <./images/Diagrama de Arquitectura.png>] [29] [30] [31])
 (sections/07-implementacion.tex [32]
-<images/Deploy UML.png, id=311, 415.5525pt x 501.37312pt>
+
+LaTeX Warning: Citation `uml-deployment' on page 33 undefined on input line 3.
+
+<images/Deploy UML.png, id=327, 415.5525pt x 501.37312pt>
 File: images/Deploy UML.png Graphic file (type png)
 <use images/Deploy UML.png>
 Package pdftex.def Info: images/Deploy UML.png  used on input line 10.
 (pdftex.def)             Requested size: 469.77176pt x 566.78984pt.
- [33
+[33
 
 ] [34 <./images/Deploy UML.png>]
-[35] [36]) (sections/08-gestion_proyecto.tex [37] [38
+Underfull \vbox (badness 6559) has occurred while \output is active []
 
-] [39])
+ [35]
+[36] [37]) (sections/08-gestion_proyecto.tex [38] [39
+
+])
 (sections/09-problemas_encontrados.tex [40])
 (sections/10-testing_aplicacion.tex [41
 
-] [42]
+] [42
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+] [43]
+Underfull \vbox (badness 1067) has occurred while \output is active []
 
-[43
-
-] [44]) (sections/11-solucion_desarrollada.tex [45] [46
+ [44])
+(sections/11-solucion_desarrollada.tex [45] [46
 
 ] [47] [48]
-<images/registroDeLote.png, id=462, 1431.09656pt x 678.28406pt>
+<images/registroDeLote.png, id=485, 1431.09656pt x 678.28406pt>
 File: images/registroDeLote.png Graphic file (type png)
 <use images/registroDeLote.png>
-Package pdftex.def Info: images/registroDeLote.png  used on input line 47.
+Package pdftex.def Info: images/registroDeLote.png  used on input line 44.
 (pdftex.def)             Requested size: 399.29463pt x 189.2455pt.
-<images/ListadoDeLote.png, id=463, 1443.14156pt x 675.27281pt>
+<images/ListadoDeLote.png, id=486, 1443.14156pt x 675.27281pt>
 File: images/ListadoDeLote.png Graphic file (type png)
 <use images/ListadoDeLote.png>
-Package pdftex.def Info: images/ListadoDeLote.png  used on input line 54.
+Package pdftex.def Info: images/ListadoDeLote.png  used on input line 51.
 (pdftex.def)             Requested size: 399.29463pt x 186.82886pt.
-<images/RegistroDeAnalisis.png, id=464, 1427.3325pt x 677.53125pt>
+<images/RegistroDeAnalisis.png, id=487, 1427.3325pt x 677.53125pt>
 File: images/RegistroDeAnalisis.png Graphic file (type png)
 <use images/RegistroDeAnalisis.png>
-Package pdftex.def Info: images/RegistroDeAnalisis.png  used on input line 61.
+Package pdftex.def Info: images/RegistroDeAnalisis.png  used on input line 58.
 (pdftex.def)             Requested size: 399.29463pt x 189.5317pt.
-<images/CentroDeReportes.png, id=465, 1426.57968pt x 678.28406pt>
+<images/CentroDeReportes.png, id=488, 1426.57968pt x 678.28406pt>
 File: images/CentroDeReportes.png Graphic file (type png)
 <use images/CentroDeReportes.png>
-Package pdftex.def Info: images/CentroDeReportes.png  used on input line 68.
+Package pdftex.def Info: images/CentroDeReportes.png  used on input line 65.
 (pdftex.def)             Requested size: 399.29463pt x 189.84578pt.
-<images/PanelDeMetricas1.png, id=466, 1425.82687pt x 673.01437pt>
+<images/PanelDeMetricas1.png, id=489, 1425.82687pt x 673.01437pt>
 File: images/PanelDeMetricas1.png Graphic file (type png)
 <use images/PanelDeMetricas1.png>
-Package pdftex.def Info: images/PanelDeMetricas1.png  used on input line 75.
+Package pdftex.def Info: images/PanelDeMetricas1.png  used on input line 72.
 (pdftex.def)             Requested size: 399.29463pt x 188.47354pt.
-<images/PanelDeMetricas2.png, id=467, 1431.09656pt x 681.29532pt>
+<images/PanelDeMetricas2.png, id=490, 1431.09656pt x 681.29532pt>
 File: images/PanelDeMetricas2.png Graphic file (type png)
 <use images/PanelDeMetricas2.png>
-Package pdftex.def Info: images/PanelDeMetricas2.png  used on input line 82.
+Package pdftex.def Info: images/PanelDeMetricas2.png  used on input line 79.
 (pdftex.def)             Requested size: 399.29463pt x 190.08566pt.
 ) [49 <./images/registroDeLote.png> <./images/ListadoDeLote.png>] [50 <./images
 /RegistroDeAnalisis.png> <./images/CentroDeReportes.png>] [51 <./images/PanelDe
@@ -688,13 +692,13 @@ Metricas1.png> <./images/PanelDeMetricas2.png>] (sections/12-conclusiones.tex [
 ]
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 12.
+            Default family used instead on input line 9.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 12.
+            Default family used instead on input line 9.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
-            Default family used instead on input line 12.
+            Default family used instead on input line 9.
 ) [55] [56]
 (sections/14-referencias.tex (main.bbl [57
 
@@ -713,15 +717,19 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 13094 strings out of 474486
- 212840 string characters out of 5742810
+ 13098 strings out of 474486
+ 212886 string characters out of 5742810
  1936542 words of memory out of 5000000
- 34975 multiletter control sequences out of 15000+600000
+ 34976 multiletter control sequences out of 15000+600000
  589024 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,1006b,759s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1000b,759s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tc
 rm1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
 pi600\ectt1200.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/u
@@ -729,9 +737,9 @@ rw/times/utmb8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1
 /urw/times/utmbi8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/times/utmr8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (60 pages, 4889419 bytes).
+Output written on main.pdf (60 pages, 4892782 bytes).
 PDF statistics:
- 845 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
+ 863 PDF objects out of 1000 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
  417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{Agradecimientos}{5}{Doc-Start}%
-\contentsline {section}{Resumen}{7}{Doc-Start}%
+\contentsline {section}{Agradecimientos}{5}{section*.1}%
+\contentsline {section}{Resumen}{7}{section*.2}%
 \contentsline {section}{\numberline {1}Introducción}{9}{section.1}%
 \contentsline {section}{\numberline {2}Objetivos Planteados y Resultados Esperados}{11}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Objetivos específicos}{11}{subsection.2.1}%
@@ -11,11 +11,11 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Smartsheet}{16}{subsubsection.3.2.2}%
 \contentsline {section}{\numberline {4}Análisis del Problema}{19}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Vista del Modelo de Dominio}{19}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Definición de Casos de Uso}{19}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Definición de Casos de Uso}{22}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Actores}{22}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Diagrama de Casos de Uso}{23}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Vista del Modelo de Diseño}{27}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Descripción de la Arquitectura del Sistema}{27}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.6}Descripción de la Arquitectura del Sistema}{29}{subsection.4.6}%
 \contentsline {subsubsection}{\numberline {4.6.1}Capa de Cliente (SPA/PWA)}{29}{subsubsection.4.6.1}%
 \contentsline {subsubsection}{\numberline {4.6.2}Capa de Seguridad}{29}{subsubsection.4.6.2}%
 \contentsline {subsubsection}{\numberline {4.6.3}Capa de Presentación (Frontend)}{29}{subsubsection.4.6.3}%
@@ -23,23 +23,23 @@
 \contentsline {subsubsection}{\numberline {4.6.5}Capa de Datos}{30}{subsubsection.4.6.5}%
 \contentsline {subsection}{\numberline {4.7}Descomposición en subsistemas}{30}{subsection.4.7}%
 \contentsline {subsubsection}{\numberline {4.7.1}Subsistema de Cliente}{30}{subsubsection.4.7.1}%
-\contentsline {subsubsection}{\numberline {4.7.2}Subsistema de Seguridad}{31}{subsubsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2}Subsistema de Seguridad}{30}{subsubsection.4.7.2}%
 \contentsline {subsubsection}{\numberline {4.7.3}Subsistema de Presentación (Frontend)}{31}{subsubsection.4.7.3}%
-\contentsline {subsubsection}{\numberline {4.7.4}Subsistema de Aplicación (Backend)}{32}{subsubsection.4.7.4}%
+\contentsline {subsubsection}{\numberline {4.7.4}Subsistema de Aplicación (Backend)}{31}{subsubsection.4.7.4}%
 \contentsline {subsubsection}{\numberline {4.7.5}Subsistema de Datos}{32}{subsubsection.4.7.5}%
 \contentsline {section}{\numberline {5}Implementación}{33}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Diagrama de \textit {Deployment} de UML}{33}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Tecnologías utilizadas}{33}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Cliente}{33}{subsubsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2}Tecnologías utilizadas}{35}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Cliente}{35}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Servidor}{35}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Servicios y API}{35}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Persistencia y Base de Datos}{35}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.3}Servicios y API}{36}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Persistencia y Base de Datos}{36}{subsubsection.5.2.4}%
 \contentsline {subsubsection}{\numberline {5.2.5}Seguridad}{36}{subsubsection.5.2.5}%
 \contentsline {subsubsection}{\numberline {5.2.6}Herramientas de Construcción, Testing y DevOps}{36}{subsubsection.5.2.6}%
 \contentsline {subsection}{\numberline {5.3}Horas Dedicadas}{37}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Etapa 1: Documentación y Análisis}{37}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Etapa 2: Desarrollo}{37}{subsubsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Etapa 3: Testing, Documentación Final y Presentación}{37}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.2}Etapa 2: Desarrollo}{38}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Etapa 3: Testing, Documentación Final y Presentación}{38}{subsubsection.5.3.3}%
 \contentsline {section}{\numberline {6}Gestión de Proyecto}{39}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Entorno de Desarrollo}{39}{subsection.6.1}%
 \contentsline {section}{\numberline {7}Problemas Encontrados}{41}{section.7}%
@@ -51,7 +51,7 @@
 \contentsline {subsection}{\numberline {8.3}Pruebas en Backend (Spring Boot)}{43}{subsection.8.3}%
 \contentsline {subsection}{\numberline {8.4}Pruebas en Frontend (Next.js + TypeScript)}{44}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}Pruebas Manuales en Web y PWA}{44}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Pruebas \textit {End-to-End} (E2E)}{44}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.6}Pruebas \textit {End-to-End} (E2E)}{45}{subsection.8.6}%
 \contentsline {subsection}{\numberline {8.7}Conclusión}{45}{subsection.8.7}%
 \contentsline {section}{\numberline {9}La Solución Desarrollada}{47}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Objetivos de la Solución}{47}{subsection.9.1}%

@@ -1,16 +1,18 @@
 \section{Implementación}
 \subsection{Diagrama de \textit{Deployment} de UML}
-El diagrama de \textit{Deployment} permite mostrar de manera clara cómo quedó distribuida la arquitectura física del sistema una vez implementado. Allí se identificaron los distintos nodos de hardware y software que intervinieron en la solución, así como la forma en que se organizaron los componentes dentro de la infraestructura disponible. El sistema se desplegó en un servidor virtual de Amazon Web Services (AWS), utilizando una instancia EC2 configurada para ejecutar contenedores Docker. En este entorno se alojaron los servicios del frontend, el backend y la base de datos, los cuales se comunicaron a través de una red interna propia del host.
+El diagrama de \textit{Deployment} permite mostrar de manera clara cómo quedó distribuida la arquitectura física del sistema una vez implementado\cite{uml-deployment}. Allí se identificaron los distintos nodos de hardware y software que intervinieron en la solución, así como la forma en que se organizaron los componentes dentro de la infraestructura disponible. El sistema se desplegó en un servidor virtual de Amazon Web Services (AWS), utilizando una instancia EC2 configurada para ejecutar contenedores Docker. En este entorno se alojaron los servicios del frontend, el backend y la base de datos, los cuales se comunicaron a través de una red interna propia del host.
 
  El diagrama también reflejó la forma en que los usuarios accedieron a la aplicación, ya fuera desde un navegador web o desde la versión móvil como PWA. En ambos casos, la conexión se estableció a través de Internet hacia la dirección pública del servidor EC2. Gracias a esta representación fue posible visualizar de manera sintética cómo se relacionaron los distintos elementos de la solución y cómo se organizó el entorno de despliegue, lo que sirvió como punto de partida para el análisis detallado de las tecnologías utilizadas en el backend y el frontend\cite{pwa-webdev,inia-uy,aws}. La Figura \ref{fig:deploy} muestra el diagrama de deployment completo.
 
-\begin{figure}[htbp]
+\begin{figure}[p]
 	\centering
 	% Mostrar el diagrama de deployment ocupando la mayor área de la página
 	\includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{Deploy UML.png}}
 	\caption{Diagrama de deployment UML mostrando la distribución de nodos y contenedores en la infraestructura de despliegue.}
 	\label{fig:deploy}
 \end{figure}
+
+\FloatBarrier
 \subsection{Tecnologías utilizadas}
 \subsubsection{Cliente}
 El cliente del sistema fue diseñado como una aplicación web dinámica utilizando Next.js 14 y React 18, tecnologías ampliamente adoptadas en entornos productivos debido a su eficiencia, modularidad y soporte comunitario\cite{nextjs}.
@@ -50,7 +52,7 @@ Finalmente, el uso de Docker y Docker Compose permitió ejecutar el proyecto de 
 
 La comunicación con la base de datos se realizó a través de JPA/Hibernate, lo que permitió manejar las entidades del dominio de forma eficiente y reducir la carga de escribir consultas SQL manuales. El servicio funcionó dentro de un contenedor Docker, lo que facilitó su despliegue en la instancia EC2 y garantiza un entorno consistente durante todo el ciclo de vida del proyecto\cite{hibernate}.
 \subsection{Horas Dedicadas}
-A continuación se detallarán los registros de horas por etapa del proyecto. Estos fueron gestionados utilizando un proyecto en Toggl\cite{toggl}. La Tabla \ref{tab:hours-summary} muestra el resumen de horas dedicadas por etapa.
+A continuación se detallarán los registros de horas grupales por etapa del proyecto. Estos fueron gestionados utilizando un proyecto en Toggl\cite{toggl}. La Tabla \ref{tab:hours-summary} muestra el resumen de horas dedicadas por etapa.
 
 % Resumen rápido de horas por etapa
 \begin{table}[h]

@@ -99,10 +99,8 @@ El frontend funciona como una aplicación web moderna basada en Next.js y diseñ
 \cite{nextjs}
 \subsubsection{Capa de Seguridad}
 Incluye los mecanismos que protegen el acceso al sistema. Se utiliza autenticación basada en JWT almacenado en cookies seguras y un sistema de doble factor (2FA) mediante códigos TOTP compatibles con Google Authenticator. La autorización se gestiona con Spring Security mediante roles como ADMIN, ANALISTA y OBSERVADOR. El frontend también aporta seguridad con middleware que controla el acceso a rutas protegidas. Además, existe un sistema de notificaciones por correo para avisos de seguridad y recuperación de cuentas.
-Incluye los mecanismos que protegen el acceso al sistema. Se utiliza autenticación basada en JWT almacenado en cookies seguras y un sistema de doble factor (2FA) mediante códigos TOTP compatibles con Google Authenticator. La autorización se gestiona con Spring Security mediante roles como ADMIN, ANALISTA y OBSERVADOR. El frontend también aporta seguridad con middleware que controla el acceso a rutas protegidas. Además, existe un sistema de notificaciones por correo para avisos de seguridad y recuperación de cuentas.
 \subsubsection{Capa de Presentación (Frontend)}
 Esta capa engloba la lógica de presentación, los componentes visuales, la validación de formularios y el manejo de estado. Se utilizan herramientas como React Query, React Hook Form, Zod, Radix UI, shadcn/ui y Tailwind\cite{react-query,react-hook-form,zod,radixui,shadcn,tailwindcss}. El frontend organiza sus rutas y funcionalidades en módulos bien definidos: autenticación, administración, análisis, reportes, perfil, notificaciones, etc. También ofrece integración con WebSockets para recibir actualizaciones y notificaciones automáticamente e incluye funcionalidades como \textit{dashboards} interactivos, listados, formularios complejos e instalación como PWA.
-También ofrece integración con WebSockets para recibir actualizaciones y notificaciones automáticamente e incluye funcionalidades como \textit{dashboards} interactivos, listados, formularios complejos e instalación como PWA.
 \subsubsection{Capa de Aplicación (Backend)}
 El backend está construido con Spring Boot siguiendo el patrón MVC y estructurado en Controllers, Services y Repositories. Los Controllers exponen las APIs, los Services contienen la lógica de negocio y los Repositories gestionan el acceso a la base de datos. Aquí se manejan análisis de semillas, validaciones, reportes, importación de datos históricos, seguridad, notificaciones y todo el flujo del sistema. También se implementa un canal WebSocket con STOMP para notificaciones en tiempo real, manejo de transacciones y un sistema global de manejo de excepciones.
 \cite{spring-boot,rfc6455}
@@ -114,30 +112,23 @@ El sistema se organiza en cinco subsistemas principales que trabajan en conjunto
 Representa lo que usa el usuario en su navegador o como PWA instalada.
 \begin{itemize}
     \item Renderiza la interfaz y maneja la experiencia visual e interacción.
-    \item Funciona incluso con conexión inestable
-    \item Administra cookies de sesión y comunicación con el backend vía HTTPS y WebSockets.
     \item Administra cookies de sesión y comunicación con el backend vía HTTPS y WebSockets.
     \item Se encarga de notificaciones push y la instalación como app en dispositivos.
 \end{itemize}
 \subsubsection{Subsistema de Seguridad}
 \begin{itemize}
-    \item Gestiona la autenticación con JWT y Cookies HttpOnly.
     \item Gestiona la autenticación con JWT y cookies HttpOnly.
     \item Implementa 2FA con TOTP y manejo de dispositivos confiables.
     \item Controla los permisos según roles: ADMIN, ANALISTA, OBSERVADOR.
     \item Administra contraseñas, recuperación de acceso y validaciones.
-    \item Incluye middleware que protege rutas y verifica sesiones en el frontend.
     \item Incluye middleware que protege rutas y verifica sesiones en el frontend.
     \item Genera alertas por eventos críticos de seguridad (cambios de clave).
 \end{itemize}
 \subsubsection{Subsistema de Presentación (Frontend)}
 \begin{itemize}
     \item SPA/PWA construida con componentes reutilizables.
-    \item SPA/PWA construida con componentes reutilizables.
     \item Renderiza pantallas, formularios, tablas, flujos y navegación interna.
     \item Maneja el estado global de la aplicación.
-    \item Canaliza toda la comunicación hacia el backend mediante servicios API.
-    \item Recibe actualizaciones en tiempo real mediante WebSockets.
     \item Canaliza toda la comunicación hacia el backend mediante servicios API.
     \item Recibe actualizaciones en tiempo real mediante WebSockets.
     \item Aplica reglas de visibilidad según rol del usuario.

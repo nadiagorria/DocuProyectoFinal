@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.26)  1 DEC 2025 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.11.26)  2 DEC 2025 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -613,24 +613,21 @@ Package pdftex.def Info: images/casos de uso pt3.drawio.png  used on input line
 (pdftex.def)             Requested size: 469.73097pt x 384.19203pt.
  [23] [24 <./images/casos de uso pt1.drawio.png>] [25 <./images/casos de uso pt
 2.drawio.png>] [26 <./images/casos de uso pt3.drawio.png>]
-<images/Diagrama de Arquitectura.png, id=262, 1207.51125pt x 2893.81125pt>
+<images/Diagrama de Arquitectura.png, id=262, 1327.96124pt x 2893.81125pt>
 File: images/Diagrama de Arquitectura.png Graphic file (type png)
 <use images/Diagrama de Arquitectura.png>
 Package pdftex.def Info: images/Diagrama de Arquitectura.png  used on input lin
 e 93.
-(pdftex.def)             Requested size: 249.69714pt x 598.4014pt.
+(pdftex.def)             Requested size: 274.60458pt x 598.4014pt.
 
 [27] [28 <./images/Diagrama de Arquitectura.png>] [29] [30] [31])
 (sections/07-implementacion.tex [32]
-
-LaTeX Warning: Citation `uml-deployment' on page 33 undefined on input line 3.
-
 <images/Deploy UML.png, id=327, 415.5525pt x 501.37312pt>
 File: images/Deploy UML.png Graphic file (type png)
 <use images/Deploy UML.png>
 Package pdftex.def Info: images/Deploy UML.png  used on input line 10.
 (pdftex.def)             Requested size: 469.77176pt x 566.78984pt.
-[33
+ [33
 
 ] [34 <./images/Deploy UML.png>]
 Underfull \vbox (badness 6559) has occurred while \output is active []
@@ -717,10 +714,6 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
  13098 strings out of 474486
@@ -737,7 +730,7 @@ rw/times/utmb8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1
 /urw/times/utmbi8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/times/utmr8a.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (60 pages, 4892782 bytes).
+Output written on main.pdf (60 pages, 4894121 bytes).
 PDF statistics:
  863 PDF objects out of 1000 (max. 8388607)
  182 named destinations out of 1000 (max. 500000)

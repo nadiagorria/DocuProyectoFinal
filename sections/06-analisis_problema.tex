@@ -3,19 +3,20 @@ Para poder desarrollar el sistema web del INIA fue necesario entender a fondo cu
 
 A partir de este análisis, se estudiaron cuidadosamente los procesos actuales, se conversó con los usuarios y se documentaron sus necesidades. Esto permitió definir cómo debía funcionar el sistema, qué información era importante, quiénes interactúan con él y qué herramientas debían construirse para hacer su trabajo más sencillo y seguro. Con esta información se estableció el alcance del proyecto y se identificaron los puntos críticos a resolver en cuanto a diseño y desarrollo\cite{inia-uy}.
 \subsection{Vista del Modelo de Dominio}
-El modelo de dominio reúne todas las entidades del sistema y muestra cómo se relacionan todas entre sí. Tener esta vista clara fue fundamental para ordenar las ideas y asegurarse de que el sistema reflejase fielmente la forma en que se trabaja en el laboratorio.
+El modelo de dominio reúne todas las entidades del sistema y muestra cómo se relacionan todas entre sí. Tener esta vista clara fue fundamental para ordenar las ideas y asegurarse de que el sistema reflejase fielmente la forma en que se trabaja en el laboratorio. La Figura \ref{fig:modelo_dominio} presenta el modelo completo de dominio con sus entidades principales, mientras que la Figura \ref{fig:enumeration_dominio} muestra las enumeraciones utilizadas.
+
 \begin{figure}[htbp]
     \centering
     % Mostrar el diagrama de dominio ocupando la mayor área posible en la página
     \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{Diagrama de Dominio.png}}
-    \caption{Modelo de dominio: entidades y relaciones principales.}
+    \caption{Modelo de dominio con entidades y relaciones principales.}
     \label{fig:modelo_dominio}
 \end{figure}
 \begin{figure}[htbp]
     \centering
     % Enumeration del dominio, mostrado inmediatamente después para referencia
     \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{Enumeration Dominio.png}}
-    \caption{Enumeración del dominio: valores y tipos constantes usados en el modelo.}
+    \caption{Enumeración del dominio con valores y tipos constantes usados en el modelo.}
     \label{fig:enumeration_dominio}
 \end{figure}
 \subsection{Definición de Casos de Uso}
@@ -49,7 +50,7 @@ Los actores son los elementos externos al sistema, ya sean usuarios o sistemas, 
     \item No posee permisos para modificar datos.
 \end{itemize}
 \subsection{Diagrama de Casos de Uso}
-El siguiente diagrama muestra los principales casos de uso del sistema:
+El siguiente diagrama muestra los principales casos de uso del sistema. Debido a su complejidad, se presenta dividido en tres partes (Figuras \ref{fig:casos_uso}, \ref{fig:casos_uso_pt2} y \ref{fig:casos_uso_pt3}) para facilitar su visualización.
 
 \vspace{1em}
 
@@ -58,19 +59,19 @@ El siguiente diagrama muestra los principales casos de uso del sistema:
 \begin{figure}[p]
     \centering
     \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{casos de uso pt1.drawio.png}}
-    \caption{Diagrama de casos de uso -- Parte 1/3 (dividido para mejorar la visualización).}
+    \caption{Diagrama de casos de uso, parte 1 de 3.}
     \label{fig:casos_uso}
 \end{figure}
 \begin{figure}[p]
     \centering
     \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{casos de uso pt2.drawio.png}}
-    \caption{Diagrama de casos de uso -- Parte 2/3.}
+    \caption{Diagrama de casos de uso, parte 2 de 3.}
     \label{fig:casos_uso_pt2}
 \end{figure}
 \begin{figure}[p]
     \centering
     \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{casos de uso pt3.drawio.png}}
-    \caption{Diagrama de casos de uso -- Parte 3/3.}
+    \caption{Diagrama de casos de uso, parte 3 de 3.}
     \label{fig:casos_uso_pt3}
 \end{figure}
 
@@ -82,12 +83,13 @@ El diseño propuesto para la arquitectura del sistema busca mantener un equilibr
 
  La organización del sistema se basa en una arquitectura por capas que incluye la capa de Cliente, donde se ubica la aplicación web, y la capa de Presentación, encargada de gestionar la interfaz y la comunicación inicial con el backend. En esta capa se incorporan además las capacidades PWA (Progressive Web App), lo que permite que la aplicación web se comporte como una aplicación nativa sin necesidad de instalarse desde una tienda\cite{pwa-webdev}. A esto se suma la capa de Seguridad, que centraliza los mecanismos de autenticación, autorización y protección de datos. Por su parte, la capa de Aplicación, implementada con Spring Boot, contiene toda la lógica del negocio y se encarga del flujo de información hacia la capa de Datos, responsable del acceso y persistencia.
 
-En esta arquitectura, los servicios adicionales que utiliza el sistema, como el envío de correos o la verificación en dos pasos, se integran directamente dentro de la capa de Aplicación. Esto evita complejidades innecesarias en la representación del diseño y mantiene el diagrama coherente y simple, sin dejar de reflejar el funcionamiento real del sistema.
+En esta arquitectura, los servicios adicionales que utiliza el sistema, como el envío de correos o la verificación en dos pasos, se integran directamente dentro de la capa de Aplicación. Esto evita complejidades innecesarias en la representación del diseño y mantiene el diagrama coherente y simple, sin dejar de reflejar el funcionamiento real del sistema. La Figura \ref{fig:arquitectura} ilustra la organización en capas del sistema.
+
 \begin{figure}[htbp]
     \centering
     % Mostrar el diagrama de arquitectura ocupando la mayor área posible
     \includegraphics[width=\textwidth,height=0.92\textheight,keepaspectratio]{\detokenize{Diagrama de Arquitectura.png}}
-    \caption{Diagrama de arquitectura: capas y componentes principales del sistema.}
+    \caption{Diagrama de arquitectura con capas y componentes principales del sistema.}
     \label{fig:arquitectura}
 \end{figure}
 \subsection{Descripción de la Arquitectura del Sistema}

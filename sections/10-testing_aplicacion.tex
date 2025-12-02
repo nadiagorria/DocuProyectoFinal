@@ -4,8 +4,7 @@ El testing de la aplicación se llevó adelante directamente por quienes trabaja
 \subsection{Pruebas Manuales Iniciales}
 Cada funcionalidad fue probada primero de manera manual, revisando su comportamiento desde la interfaz o enviando solicitudes a la API según correspondiera. Una vez que el sistema estuvo completo, se hizo una revisión general de todos los casos de uso para asegurarse de que los flujos funcionaran de forma coherente y sin generar fallos entre distintas partes de la aplicación.
 \subsection{Pruebas en Backend (Spring Boot)}
-En el backend, desarrollado con Spring Boot, se implementaron pruebas unitarias e integraciones utilizando JUnit, Mockito y la herramienta de cobertura JaCoCo. Esto permitió verificar la lógica de negocio, los controladores y varios de los servicios internos. La cobertura superó el 80\%, un valor adecuado para tener un buen nivel de confianza en el comportamiento de las áreas más importantes del código.
-\cite{spring-boot,junit5,mockito,jacoco}
+En el backend, desarrollado con Spring Boot, se implementaron pruebas unitarias e integraciones utilizando JUnit, Mockito y la herramienta de cobertura JaCoCo. Esto permitió verificar la lógica de negocio, los controladores y varios de los servicios internos. La cobertura superó el 80\%, un valor adecuado para tener un buen nivel de confianza en el comportamiento de las áreas más importantes del código\cite{spring-boot,junit5,mockito,jacoco}.
 
 De todos modos, se entiende que un porcentaje elevado de cobertura no garantiza que el software esté libre de errores. La cobertura solo indica qué líneas fueron ejecutadas durante las pruebas, pero no asegura que todas las variantes, casos límite o comportamientos inesperados hayan sido contemplados. Por esta razón, las pruebas automatizadas se complementaron con verificaciones manuales, exploratorias y de integración, lo que permitió detectar situaciones que no siempre quedan reflejadas en los tests automatizados y, en conjunto, mejorar la calidad general del backend.
 
@@ -29,8 +28,7 @@ Tests Ejecutados & 1440 \\
 \end{table}
 
 \subsection{Pruebas en Frontend (Next.js + TypeScript)}
-El frontend, construido con Next.js y TypeScript, también incorporó pruebas automatizadas mediante Jest y React Testing Library. Estas pruebas abarcaron componentes, funciones auxiliares y ciertos elementos de la lógica de presentación. Al igual que en el backend, el nivel de cobertura superó el 80\%, lo que ayudó a detectar errores de visualización, manejo de datos y algunos detalles que surgieron durante la integración con la API.
-\cite{nextjs,jest,rtl}
+El frontend, construido con Next.js y TypeScript, también incorporó pruebas automatizadas mediante Jest y React Testing Library. Estas pruebas abarcaron componentes, funciones auxiliares y ciertos elementos de la lógica de presentación. Al igual que en el backend, el nivel de cobertura superó el 80\%, lo que ayudó a detectar errores de visualización, manejo de datos y algunos detalles que surgieron durante la integración con la API\cite{nextjs,jest,rtl}.
 
 \begin{table}[h]
 \centering
@@ -50,7 +48,7 @@ Tests ejecutados & 1931 \\
 \end{table}
 
 \subsection{Pruebas Manuales en Web y PWA}
-Además de estas pruebas automatizadas, se realizaron pruebas manuales tanto en la versión web como en la PWA\cite{pwa-webdev}. En esta etapa se revisó la navegación completa, el funcionamiento en dispositivos móviles, la instalación de la aplicación y los flujos principales de interacción desde el punto de vista del usuario final.
+Además de estas pruebas automatizadas, se realizaron pruebas manuales tanto en la versión web como en la PWA. En esta etapa se revisó la navegación completa, el funcionamiento en dispositivos móviles, la instalación de la aplicación y los flujos principales de interacción desde el punto de vista del usuario final\cite{pwa-webdev}.
 \subsection{Pruebas \textit{End-to-End} (E2E)}
 Por último, se realizaron pruebas \textit{end-to-end} (E2E) para evaluar el funcionamiento del sistema completo, desde la interfaz hasta la base de datos. Este tipo de testing se centró en reproducir escenarios reales de uso, verificando que los distintos componentes interactúan de forma correcta y continua. Las pruebas E2E permitieron validar flujos completos como el inicio de sesión, la carga y consulta de datos, la comunicación con la API y la correcta actualización de la información en la base de datos. Este enfoque fue especialmente útil para detectar errores que no aparecen en pruebas aisladas, como problemas de integración, diferencias en el formato de los datos o comportamientos inesperados al combinar varias funcionalidades en un mismo flujo.
 \subsection{Conclusión}

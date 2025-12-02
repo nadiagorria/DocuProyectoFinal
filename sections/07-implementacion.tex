@@ -2,8 +2,7 @@
 \subsection{Diagrama de \textit{Deployment} de UML}
 El diagrama de \textit{Deployment} permite mostrar de manera clara cómo quedó distribuida la arquitectura física del sistema una vez implementado. Allí se identificaron los distintos nodos de hardware y software que intervinieron en la solución, así como la forma en que se organizaron los componentes dentro de la infraestructura disponible. El sistema se desplegó en un servidor virtual de Amazon Web Services (AWS), utilizando una instancia EC2 configurada para ejecutar contenedores Docker. En este entorno se alojaron los servicios del frontend, el backend y la base de datos, los cuales se comunicaron a través de una red interna propia del host.
 
- El diagrama también reflejó la forma en que los usuarios accedieron a la aplicación, ya fuera desde un navegador web o desde la versión móvil como PWA\cite{pwa-webdev}. En ambos casos, la conexión se estableció a través de Internet hacia la dirección pública del servidor EC2. Gracias a esta representación fue posible visualizar de manera sintética cómo se relacionaron los distintos elementos de la solución y cómo se organizó el entorno de despliegue, lo que sirvió como punto de partida para el análisis detallado de las tecnologías utilizadas en el backend y el frontend.
-\cite{inia-uy,aws}
+ El diagrama también reflejó la forma en que los usuarios accedieron a la aplicación, ya fuera desde un navegador web o desde la versión móvil como PWA. En ambos casos, la conexión se estableció a través de Internet hacia la dirección pública del servidor EC2. Gracias a esta representación fue posible visualizar de manera sintética cómo se relacionaron los distintos elementos de la solución y cómo se organizó el entorno de despliegue, lo que sirvió como punto de partida para el análisis detallado de las tecnologías utilizadas en el backend y el frontend\cite{pwa-webdev,inia-uy,aws}.
 \begin{figure}[htbp]
 	\centering
 	% Mostrar el diagrama de deployment ocupando la mayor área de la página
@@ -13,29 +12,23 @@ El diagrama de \textit{Deployment} permite mostrar de manera clara cómo quedó 
 \end{figure}
 \subsection{Tecnologías utilizadas}
 \subsubsection{Cliente}
-El cliente del sistema fue diseñado como una aplicación web dinámica utilizando Next.js 14 y React 18, tecnologías ampliamente adoptadas en entornos productivos debido a su eficiencia, modularidad y soporte comunitario.
-\cite{nextjs}
+El cliente del sistema fue diseñado como una aplicación web dinámica utilizando Next.js 14 y React 18, tecnologías ampliamente adoptadas en entornos productivos debido a su eficiencia, modularidad y soporte comunitario\cite{nextjs}.
 
 La estructura se organizó siguiendo las convenciones del App Router de Next.js, lo cual permitió una clara separación entre páginas, componentes y módulos de lógica, promoviendo escalabilidad y mantenibilidad.
 
-Para el desarrollo de la interfaz de usuario se utilizaron Tailwind CSS, Radix UI y Shadcn. Estas tecnologías permitieron crear una experiencia visual coherente y accesible, con componentes reutilizables y mantenibles, alineados con estándares modernos de diseño.
-\cite{tailwindcss,radixui,shadcn}
+Para el desarrollo de la interfaz de usuario se utilizaron Tailwind CSS, Radix UI y Shadcn. Estas tecnologías permitieron crear una experiencia visual coherente y accesible, con componentes reutilizables y mantenibles, alineados con estándares modernos de diseño\cite{tailwindcss,radixui,shadcn}.
 
 La comunicación entre el frontend y el backend se realizó mediante APIs REST para la mayor parte de las operaciones, mientras que las funcionalidades en tiempo real se implementaron a través de WebSocket, permitiendo la recepción de notificaciones instantáneas y mejorando la experiencia interactiva del usuario.
 
-El aseguramiento de calidad del frontend incluyó la ejecución de pruebas automatizadas mediante Jest y React Testing Library, herramientas ampliamente utilizadas para validar el comportamiento de componentes y flujos de interacción.
-\cite{jest,rtl}
+El aseguramiento de calidad del frontend incluyó la ejecución de pruebas automatizadas mediante Jest y React Testing Library, herramientas ampliamente utilizadas para validar el comportamiento de componentes y flujos de interacción\cite{jest,rtl}.
 \subsubsection{Servidor}
-El backend se implementó utilizando Java 21 con Spring Boot 3.5, aplicando una arquitectura en capas que divide la lógica de negocio, los servicios, los controladores web, los repositorios de datos y las configuraciones transversales. Esta estructura facilita el mantenimiento, reduce el acoplamiento y mejora la estabilidad del sistema.
-\cite{spring-boot}
+El backend se implementó utilizando Java 21 con Spring Boot 3.5, aplicando una arquitectura en capas que divide la lógica de negocio, los servicios, los controladores web, los repositorios de datos y las configuraciones transversales. Esta estructura facilita el mantenimiento, reduce el acoplamiento y mejora la estabilidad del sistema\cite{spring-boot}.
 \subsubsection{Servicios y API}
-La API del sistema fue documentada utilizando OpenAPI/Swagger, permitiendo que tanto desarrolladores como actores externos comprendan las especificaciones de cada endpoint, formatos de datos, tipos de respuestas y códigos de error.
-\cite{openapi}
+La API del sistema fue documentada utilizando OpenAPI/Swagger, permitiendo que tanto desarrolladores como actores externos comprendan las especificaciones de cada endpoint, formatos de datos, tipos de respuestas y códigos de error\cite{openapi}.
 
 El backend expone servicios REST y un canal de comunicación en tiempo real mediante WebSocket (STOMP), empleado para enviar notificaciones y eventos relevantes sin necesidad de realizar consultas repetitivas al servidor.
 \subsubsection{Persistencia y Base de Datos}
-La aplicación utiliza PostgreSQL 15, gestionado mediante Spring Data JPA, lo cual permitió automatizar tareas de persistencia y reducir la necesidad de escribir consultas SQL manuales.
-\cite{postgresql}
+La aplicación utiliza PostgreSQL 15, gestionado mediante Spring Data JPA, lo cual permitió automatizar tareas de persistencia y reducir la necesidad de escribir consultas SQL manuales\cite{postgresql}.
 
 Durante el proceso de pruebas se utilizó H2, una base de datos en memoria que permite ejecutar los tests de forma rápida, aislada y sin requerir infraestructura externa.
 \subsubsection{Seguridad}
@@ -45,22 +38,18 @@ La seguridad del sistema se abordó mediante:
     \item JWT para la gestión de sesiones sin estado.
     \item Autenticación en dos pasos (2FA) mediante códigos TOTP, fortaleciendo la seguridad del acceso.
 \end{itemize}
-\cite{spring-security,rfc7519,rfc6238}
 
-    Este conjunto de herramientas permitió cumplir buenas prácticas de seguridad alineadas con estándares modernos.
+    Este conjunto de herramientas permitió cumplir buenas prácticas de seguridad alineadas con estándares modernos\cite{spring-security,rfc7519,rfc6238}.
 \subsubsection{Herramientas de Construcción, Testing y DevOps}
 El backend fue compilado y gestionado mediante Maven, lo que permitió automatizar tareas de instalación, test y empaquetado.
 
-La calidad del código se reforzó mediante pruebas unitarias utilizando JUnit 5 y Mockito, enfocadas en validar la lógica de negocio, la interacción entre módulos y el correcto comportamiento de los componentes críticos.
-\cite{junit5,jacoco}
+La calidad del código se reforzó mediante pruebas unitarias utilizando JUnit 5 y Mockito, enfocadas en validar la lógica de negocio, la interacción entre módulos y el correcto comportamiento de los componentes críticos\cite{junit5,jacoco}.
 
-Finalmente, el uso de Docker y Docker Compose permitió ejecutar el proyecto de forma completa (frontend, backend y base de datos) mediante entornos aislados y reproducibles, asegurando coherencia en las diferentes etapas del desarrollo.
-\cite{docker}
+Finalmente, el uso de Docker y Docker Compose permitió ejecutar el proyecto de forma completa (frontend, backend y base de datos) mediante entornos aislados y reproducibles, asegurando coherencia en las diferentes etapas del desarrollo\cite{docker}.
 
-La comunicación con la base de datos se realizó a través de JPA/Hibernate, lo que permitió manejar las entidades del dominio de forma eficiente y reducir la carga de escribir consultas SQL manuales.\cite{hibernate} El servicio funcionó dentro de un contenedor Docker, lo que facilitó su despliegue en la instancia EC2 y garantiza un entorno consistente durante todo el ciclo de vida del proyecto.
+La comunicación con la base de datos se realizó a través de JPA/Hibernate, lo que permitió manejar las entidades del dominio de forma eficiente y reducir la carga de escribir consultas SQL manuales. El servicio funcionó dentro de un contenedor Docker, lo que facilitó su despliegue en la instancia EC2 y garantiza un entorno consistente durante todo el ciclo de vida del proyecto\cite{hibernate}.
 \subsection{Horas Dedicadas}
-A continuación se detallarán los registros de horas por etapa del proyecto. Estos fueron gestionados utilizando un proyecto en Toggl.
-\cite{toggl}
+A continuación se detallarán los registros de horas por etapa del proyecto. Estos fueron gestionados utilizando un proyecto en Toggl\cite{toggl}.
 
 % Resumen rápido de horas por etapa
 \begin{center}
